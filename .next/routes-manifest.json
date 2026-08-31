@@ -66,6 +66,12 @@
       "namedRegex": "^/galeria(?:/)?$"
     },
     {
+      "page": "/icon",
+      "regex": "^/icon(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/icon(?:/)?$"
+    },
+    {
       "page": "/imprensa",
       "regex": "^/imprensa(?:/)?$",
       "routeKeys": {},
@@ -76,6 +82,12 @@
       "regex": "^/musica(?:/)?$",
       "routeKeys": {},
       "namedRegex": "^/musica(?:/)?$"
+    },
+    {
+      "page": "/opengraph-image",
+      "regex": "^/opengraph\\-image(?:/)?$",
+      "routeKeys": {},
+      "namedRegex": "^/opengraph\\-image(?:/)?$"
     },
     {
       "page": "/projetos",

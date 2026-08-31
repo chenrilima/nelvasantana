@@ -1,0 +1,5 @@
+import { ImageResponse } from "next/og";
+export const alt = "Nellva Sântana — Raízes profundas. A mesma essência em cada canção.";
+export const size = { width: 1200, height: 630 };
+export const contentType = "image/png";
+export default function OpenGraphImage() { return new ImageResponse(<div style={{ width: "100%", height: "100%", display: "flex", position: "relative", padding: "70px 84px", flexDirection: "column", justifyContent: "center", background: "#1A0F0D", color: "#F9F7F2", fontFamily: "serif" }}><div style={{ color: "#B8860B", fontFamily: "sans-serif", fontSize: 18, letterSpacing: 7, textTransform: "uppercase" }}>Site oficial</div><div style={{ display: "flex", fontSize: 118, lineHeight: .9, marginTop: 30 }}>Nellva <span style={{ color: "#B8860B", fontStyle: "italic", marginLeft: 24 }}>Sântana</span></div><div style={{ fontSize: 35, fontStyle: "italic", marginTop: 50, color: "#d8cbc4" }}>Raízes profundas. A mesma essência em cada canção.</div><div style={{ position: "absolute", right: 70, top: 50, bottom: 50, width: 260, border: "1px solid rgba(184,134,11,.35)", background: "linear-gradient(145deg,#2c1813,#68402f)" }} /></div>, size); }
