@@ -40,9 +40,9 @@ export function Header() {
       <nav className="desktop-nav" aria-label="Navegação principal">
         {links.slice(1, 6).map(([href, label]) => <Link key={href} className={pathname === href ? "active" : ""} href={href}>{label}</Link>)}
       </nav>
-      <button ref={triggerRef} className="menu-trigger" type="button" aria-expanded={open} aria-controls="site-menu" onClick={() => setOpen(true)}><span /><span /><span /><b>Abrir menu</b></button>
+      <button ref={triggerRef} className="menu-trigger" type="button" aria-expanded={open} aria-controls="site-menu" aria-label="Abrir menu" onClick={() => setOpen(value => !value)}><span /><span /><span /></button>
     </header>
-    <div id="site-menu" className={`menu-overlay ${open ? "is-open" : ""}`} aria-hidden={!open}>
+    <div id="site-menu" className={`menu-overlay ${open ? "is-open" : ""}`} aria-hidden={!open} role="dialog" aria-modal="true" aria-label="Menu de navegação" onMouseDown={(event) => { if (event.target === event.currentTarget) setOpen(false); }}>
       <div className="menu-atmosphere" aria-hidden="true"><span>Voz</span><span>Memória</span><span>Brasil</span></div>
       <div className="menu-panel">
         <button ref={closeRef} className="menu-close" type="button" onClick={() => { setOpen(false); triggerRef.current?.focus(); }} aria-label="Fechar menu">×</button>

@@ -1506,4 +1506,237 @@ footer small {
   }
 }
 
+body {
+  font-family: var(--font-sans),var(--font-system),sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: var(--font-display),var(--font-serif),Georgia,serif;
+}
+
+.brand {
+  font-family: var(--font-elegant),var(--font-serif),serif;
+  font-size: 1.08rem;
+}
+
+.hero-copy h1 {
+  font-family: var(--font-script),cursive;
+  letter-spacing: 0;
+  font-weight: 400;
+}
+
+.hero-copy > p:not(.eyebrow), .hero-orbit span {
+  font-family: var(--font-display),var(--font-serif),serif;
+}
+
+.menu-trigger {
+  touch-action: manipulation;
+  width: 46px;
+  height: 46px;
+}
+
+.menu-trigger span {
+  pointer-events: none;
+  width: 25px;
+  height: 2px;
+  margin: 5px auto;
+}
+
+.menu-overlay {
+  pointer-events: none;
+}
+
+.menu-overlay.is-open {
+  pointer-events: auto;
+}
+
+.menu-panel {
+  padding-top: 6vh;
+}
+
+.menu-panel nav {
+  margin: 3vh 0;
+}
+
+.menu-panel nav a {
+  font-family: var(--font-elegant),var(--font-serif),serif;
+  padding: .15vh 0;
+  font-size: clamp(1.15rem, 1.8vw, 1.75rem);
+}
+
+.hero-portrait, .abstract-frame, .project-art, .gallery-teaser > div:first-child, .gallery-teaser > div:last-child, .identity-poster, .performance-visual, .project-emblem, .video-frame, .photo-grid figure {
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-portrait img, .abstract-frame img, .gallery-teaser img, .identity-poster img, .performance-visual img, .video-frame img, .photo-grid img {
+  object-fit: cover;
+}
+
+.hero-portrait img {
+  object-position: center 24%;
+}
+
+.abstract-frame {
+  background: #21130f;
+  padding: 0;
+}
+
+.abstract-frame img {
+  object-position: center;
+}
+
+.project-art {
+  background: #19100e;
+  display: block;
+}
+
+.project-art img {
+  object-fit: cover;
+}
+
+.project-pair article:nth-child(2) .project-art img {
+  object-fit: contain;
+  background: #eee8dc;
+}
+
+.gallery-teaser > div:first-child, .gallery-teaser > div:last-child {
+  background: #261512;
+  padding: 0;
+  display: block;
+}
+
+.identity-poster {
+  background: #20110f;
+  padding: 0;
+}
+
+.identity-poster:after {
+  content: "";
+  background: linear-gradient(#0000, #090706b8);
+  position: absolute;
+  inset: 55% 0 0;
+}
+
+.identity-poster span {
+  z-index: 1;
+  font: 400 2.4rem var(--font-script);
+  text-transform: none;
+  letter-spacing: 0;
+  color: #f9f7f2;
+}
+
+.performance-visual {
+  background: #251411;
+  padding: 0;
+  display: block;
+}
+
+.performance-visual span {
+  z-index: 1;
+  color: #ffffff52;
+  text-shadow: 0 2px 20px #0006;
+  position: absolute;
+  bottom: .5rem;
+  right: 1.5rem;
+}
+
+.project-emblem {
+  display: block;
+}
+
+.project-emblem:after {
+  content: "";
+  background: linear-gradient(#0000, #000000b3);
+  position: absolute;
+  inset: 65% 0 0;
+}
+
+.project-emblem img {
+  object-fit: cover;
+}
+
+.project-chapters article:nth-child(2) .project-emblem img {
+  object-fit: contain;
+  background: #eee8dc;
+}
+
+.project-emblem small {
+  z-index: 1;
+  position: absolute;
+  bottom: 1.5rem;
+  left: 1.5rem;
+}
+
+.project-emblem strong {
+  display: none;
+}
+
+.video-frame {
+  background: #140c0a;
+  padding: 0;
+  display: block;
+}
+
+.video-frame:after {
+  content: "";
+  background: #0000001f;
+  position: absolute;
+  inset: 0;
+}
+
+.video-frame .play {
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0 8px 28px #00000047;
+}
+
+.photo-grid {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+  display: grid;
+}
+
+.photo-grid figure {
+  background: #1a0f0d;
+  min-height: 280px;
+  margin: 0;
+}
+
+.photo-grid figure:first-child {
+  grid-row: span 2;
+  min-height: 576px;
+}
+
+@media (max-width: 760px) {
+  .site-header .brand {
+    font-size: .9rem;
+  }
+
+  .menu-panel {
+    padding-top: 7vh;
+  }
+
+  .menu-panel nav {
+    margin: 4vh 0 2vh;
+  }
+
+  .menu-panel nav a {
+    padding: .12rem 0;
+    font-size: 1.25rem;
+  }
+
+  .photo-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .photo-grid figure, .photo-grid figure:first-child {
+    grid-row: auto;
+    min-height: 420px;
+  }
+}
+
 /*# sourceMappingURL=app_globals_css_1igg3k2._.single.css.map*/

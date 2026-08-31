@@ -15,9 +15,11 @@ __turbopack_context__.s([
     ()=>metadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/footer.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/data/content.ts [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -36,7 +38,7 @@ function ProjectsPage() {
                 intro: "A produção artística de Nellva Sântana reúne singles, EPs, colaborações e produções audiovisuais. Cada projeto é concebido como uma narrativa em que som, cultura e sentimento se entrelaçam, revelando uma identidade musical que aproxima a tradição, a sensibilidade da música contemporânea."
             }, void 0, false, {
                 fileName: "[project]/app/projetos/page.tsx",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 12
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -45,8 +47,17 @@ function ProjectsPage() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "project-emblem",
-                                "aria-hidden": "true",
                                 children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                        src: index ? "/images/projeto-cancao-erudita.jpg" : "/images/projeto-noutra-bossa.jpg",
+                                        alt: `Imagem do projeto ${project.title}`,
+                                        fill: true,
+                                        sizes: "(max-width: 760px) 100vw, 40vw"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/projetos/page.tsx",
+                                        lineNumber: 11,
+                                        columnNumber: 138
+                                    }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("small", {
                                         children: [
                                             "Projeto 0",
@@ -54,20 +65,13 @@ function ProjectsPage() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/projetos/page.tsx",
-                                        lineNumber: 10,
-                                        columnNumber: 157
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
-                                        children: index ? "CEB" : "NB"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/projetos/page.tsx",
-                                        lineNumber: 10,
-                                        columnNumber: 192
+                                        lineNumber: 11,
+                                        columnNumber: 322
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/projetos/page.tsx",
-                                lineNumber: 10,
+                                lineNumber: 11,
                                 columnNumber: 106
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -77,65 +81,65 @@ function ProjectsPage() {
                                         children: "Obra artística"
                                     }, void 0, false, {
                                         fileName: "[project]/app/projetos/page.tsx",
-                                        lineNumber: 10,
-                                        columnNumber: 242
+                                        lineNumber: 11,
+                                        columnNumber: 368
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         children: project.title
                                     }, void 0, false, {
                                         fileName: "[project]/app/projetos/page.tsx",
-                                        lineNumber: 10,
-                                        columnNumber: 283
+                                        lineNumber: 11,
+                                        columnNumber: 409
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "project-summary",
                                         children: project.summary
                                     }, void 0, false, {
                                         fileName: "[project]/app/projetos/page.tsx",
-                                        lineNumber: 10,
-                                        columnNumber: 307
+                                        lineNumber: 11,
+                                        columnNumber: 433
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: project.text
                                     }, void 0, false, {
                                         fileName: "[project]/app/projetos/page.tsx",
-                                        lineNumber: 10,
-                                        columnNumber: 359
+                                        lineNumber: 11,
+                                        columnNumber: 485
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         className: "availability",
                                         children: "Links oficiais serão publicados quando disponibilizados."
                                     }, void 0, false, {
                                         fileName: "[project]/app/projetos/page.tsx",
-                                        lineNumber: 10,
-                                        columnNumber: 380
+                                        lineNumber: 11,
+                                        columnNumber: 506
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/projetos/page.tsx",
-                                lineNumber: 10,
-                                columnNumber: 237
+                                lineNumber: 11,
+                                columnNumber: 363
                             }, this)
                         ]
                     }, project.title, true, {
                         fileName: "[project]/app/projetos/page.tsx",
-                        lineNumber: 10,
+                        lineNumber: 11,
                         columnNumber: 77
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/projetos/page.tsx",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Booking"], {}, void 0, false, {
                 fileName: "[project]/app/projetos/page.tsx",
-                lineNumber: 10,
-                columnNumber: 496
+                lineNumber: 11,
+                columnNumber: 622
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/projetos/page.tsx",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 10
     }, this);
 }

@@ -15,9 +15,11 @@ __turbopack_context__.s([
     ()=>metadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/footer.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/data/content.ts [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -36,7 +38,7 @@ function ArtistPage() {
                 intro: "Uma trajetória construída no encontro entre memória, interpretação, tradição e contemporaneidade."
             }, void 0, false, {
                 fileName: "[project]/app/artista/page.tsx",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 12
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -49,7 +51,7 @@ function ArtistPage() {
                                 children: "Origem"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 10,
+                                lineNumber: 11,
                                 columnNumber: 49
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("strong", {
@@ -57,14 +59,14 @@ function ArtistPage() {
                                     "Nordeste,",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/artista/page.tsx",
-                                        lineNumber: 10,
+                                        lineNumber: 11,
                                         columnNumber: 99
                                     }, this),
                                     "Brasil"
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 10,
+                                lineNumber: 11,
                                 columnNumber: 82
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -73,13 +75,13 @@ function ArtistPage() {
                                 children: "BA"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 10,
+                                lineNumber: 11,
                                 columnNumber: 120
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/artista/page.tsx",
-                        lineNumber: 10,
+                        lineNumber: 11,
                         columnNumber: 42
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -87,18 +89,18 @@ function ArtistPage() {
                                 children: p
                             }, p, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 10,
+                                lineNumber: 11,
                                 columnNumber: 209
                             }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/artista/page.tsx",
-                        lineNumber: 10,
+                        lineNumber: 11,
                         columnNumber: 184
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/artista/page.tsx",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -113,76 +115,65 @@ function ArtistPage() {
                                     "Sons da Diversidade",
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
                                         fileName: "[project]/app/artista/page.tsx",
-                                        lineNumber: 11,
+                                        lineNumber: 12,
                                         columnNumber: 113
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("em", {
                                         children: "Cultural Brasileira"
                                     }, void 0, false, {
                                         fileName: "[project]/app/artista/page.tsx",
-                                        lineNumber: 11,
+                                        lineNumber: 12,
                                         columnNumber: 119
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 11,
+                                lineNumber: 12,
                                 columnNumber: 61
                             }, this),
                             __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["identity"].map((p)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                     children: p
                                 }, p, false, {
                                     fileName: "[project]/app/artista/page.tsx",
-                                    lineNumber: 11,
+                                    lineNumber: 12,
                                     columnNumber: 181
                                 }, this))
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/artista/page.tsx",
-                        lineNumber: 11,
+                        lineNumber: 12,
                         columnNumber: 56
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("aside", {
                         className: "identity-poster",
                         children: [
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: "Voz"
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                src: "/images/nellva-identidade.jpg",
+                                alt: "Nellva Sântana durante apresentação musical",
+                                fill: true,
+                                sizes: "(max-width: 760px) 100vw, 40vw"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 11,
+                                lineNumber: 12,
                                 columnNumber: 242
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: "Cultura"
-                            }, void 0, false, {
-                                fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 11,
-                                columnNumber: 252
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
-                                children: "Brasil"
-                            }, void 0, false, {
-                                fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 11,
-                                columnNumber: 266
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
                                 children: "Nellva Sântana"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 11,
-                                columnNumber: 279
+                                lineNumber: 12,
+                                columnNumber: 381
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/artista/page.tsx",
-                        lineNumber: 11,
+                        lineNumber: 12,
                         columnNumber: 207
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/artista/page.tsx",
-                lineNumber: 11,
+                lineNumber: 12,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -194,27 +185,27 @@ function ArtistPage() {
                                 children: "01"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 46
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 children: "MPB"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 61
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Canção Erudita Brasileira e MPB clássica."
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 73
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/artista/page.tsx",
-                        lineNumber: 12,
+                        lineNumber: 13,
                         columnNumber: 37
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -223,27 +214,27 @@ function ArtistPage() {
                                 children: "02"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 140
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 children: "Baião"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 155
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "A força rítmica e o balanço do sertão baiano."
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 169
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/artista/page.tsx",
-                        lineNumber: 12,
+                        lineNumber: 13,
                         columnNumber: 131
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -252,27 +243,27 @@ function ArtistPage() {
                                 children: "03"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 240
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 children: "Xote"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 255
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Melodia, sentimento e memória."
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 268
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/artista/page.tsx",
-                        lineNumber: 12,
+                        lineNumber: 13,
                         columnNumber: 231
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -281,27 +272,27 @@ function ArtistPage() {
                                 children: "04"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 324
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 children: "Bossa Nova"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 339
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Suavidade e balanço integrados à voz nordestina."
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 358
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/artista/page.tsx",
-                        lineNumber: 12,
+                        lineNumber: 13,
                         columnNumber: 315
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
@@ -310,44 +301,44 @@ function ArtistPage() {
                                 children: "05"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 432
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h3", {
                                 children: "Canto erudito"
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 447
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Árias de Ópera, Lied e Canto Coral Sacro."
                             }, void 0, false, {
                                 fileName: "[project]/app/artista/page.tsx",
-                                lineNumber: 12,
+                                lineNumber: 13,
                                 columnNumber: 469
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/artista/page.tsx",
-                        lineNumber: 12,
+                        lineNumber: 13,
                         columnNumber: 423
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/artista/page.tsx",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Booking"], {}, void 0, false, {
                 fileName: "[project]/app/artista/page.tsx",
-                lineNumber: 12,
+                lineNumber: 13,
                 columnNumber: 537
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/artista/page.tsx",
-        lineNumber: 9,
+        lineNumber: 10,
         columnNumber: 10
     }, this);
 }

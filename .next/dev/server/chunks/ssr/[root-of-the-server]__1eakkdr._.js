@@ -15,9 +15,11 @@ __turbopack_context__.s([
     ()=>metadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/footer.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/data/content.ts [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -26,6 +28,14 @@ const metadata = {
     title: "Trajetória",
     description: "Performances e momentos importantes da trajetória artística de Nellva Sântana."
 };
+const performanceImages = [
+    "paixao-de-cristo.jpg",
+    "paixao-de-cristo.jpg",
+    "paixao-de-cristo.jpg",
+    "mulheres-que-cantam.jpg",
+    "direcao-musical.jpg",
+    "danca-de-oz.jpg"
+];
 function TrajectoryPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
@@ -36,7 +46,7 @@ function TrajectoryPage() {
                 intro: "Momentos que traduzem a força da música, da cultura e da presença artística de Nellva Sântana nos palcos."
             }, void 0, false, {
                 fileName: "[project]/app/trajetoria/page.tsx",
-                lineNumber: 9,
+                lineNumber: 12,
                 columnNumber: 12
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -46,18 +56,28 @@ function TrajectoryPage() {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "performance-visual",
-                                "aria-label": `Espaço para fotografia oficial de ${item.title}`,
-                                role: "img",
-                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                    children: String(index + 1).padStart(2, "0")
-                                }, void 0, false, {
-                                    fileName: "[project]/app/trajetoria/page.tsx",
-                                    lineNumber: 10,
-                                    columnNumber: 245
-                                }, this)
-                            }, void 0, false, {
+                                children: [
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                        src: `/images/${performanceImages[index]}`,
+                                        alt: `Nellva Sântana em ${item.title}`,
+                                        fill: true,
+                                        sizes: "(max-width: 760px) 100vw, 50vw"
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/trajetoria/page.tsx",
+                                        lineNumber: 13,
+                                        columnNumber: 171
+                                    }, this),
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
+                                        children: String(index + 1).padStart(2, "0")
+                                    }, void 0, false, {
+                                        fileName: "[project]/app/trajetoria/page.tsx",
+                                        lineNumber: 13,
+                                        columnNumber: 308
+                                    }, this)
+                                ]
+                            }, void 0, true, {
                                 fileName: "[project]/app/trajetoria/page.tsx",
-                                lineNumber: 10,
+                                lineNumber: 13,
                                 columnNumber: 135
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -71,49 +91,49 @@ function TrajectoryPage() {
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/app/trajetoria/page.tsx",
-                                        lineNumber: 10,
-                                        columnNumber: 305
+                                        lineNumber: 13,
+                                        columnNumber: 368
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                         children: item.title
                                     }, void 0, false, {
                                         fileName: "[project]/app/trajetoria/page.tsx",
-                                        lineNumber: 10,
-                                        columnNumber: 358
+                                        lineNumber: 13,
+                                        columnNumber: 421
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                         children: item.text
                                     }, void 0, false, {
                                         fileName: "[project]/app/trajetoria/page.tsx",
-                                        lineNumber: 10,
-                                        columnNumber: 379
+                                        lineNumber: 13,
+                                        columnNumber: 442
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/trajetoria/page.tsx",
-                                lineNumber: 10,
-                                columnNumber: 300
+                                lineNumber: 13,
+                                columnNumber: 363
                             }, this)
                         ]
                     }, item.title, true, {
                         fileName: "[project]/app/trajetoria/page.tsx",
-                        lineNumber: 10,
+                        lineNumber: 13,
                         columnNumber: 70
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/trajetoria/page.tsx",
-                lineNumber: 10,
+                lineNumber: 13,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Booking"], {}, void 0, false, {
                 fileName: "[project]/app/trajetoria/page.tsx",
-                lineNumber: 10,
-                columnNumber: 425
+                lineNumber: 13,
+                columnNumber: 488
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/trajetoria/page.tsx",
-        lineNumber: 9,
+        lineNumber: 12,
         columnNumber: 10
     }, this);
 }

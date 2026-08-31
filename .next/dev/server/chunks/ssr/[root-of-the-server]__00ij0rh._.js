@@ -15,9 +15,11 @@ __turbopack_context__.s([
     ()=>metadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/footer.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/data/content.ts [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -26,6 +28,16 @@ const metadata = {
     title: "Vídeos",
     description: "Videoteca artística de Nellva Sântana."
 };
+const thumbnails = [
+    "video-stizzoso.jpg",
+    "video-an-die-musik.jpg",
+    "video-ave-maria.jpg",
+    "video-amor-que-nao-vivi.jpg",
+    "video-pai-nosso.jpg",
+    "video-xote-das-meninas.jpg",
+    "video-uirapuru.jpg",
+    "video-canto-veronica.jpg"
+];
 function VideosPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
@@ -36,7 +48,7 @@ function VideosPage() {
                 intro: "Um arquivo de interpretações, encontros e repertórios que atravessam a trajetória de Nellva Sântana."
             }, void 0, false, {
                 fileName: "[project]/app/videos/page.tsx",
-                lineNumber: 9,
+                lineNumber: 12,
                 columnNumber: 12
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -46,11 +58,14 @@ function VideosPage() {
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "video-frame",
                                 children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        children: String(index + 1).padStart(2, "0")
+                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                        src: `/images/${thumbnails[index]}`,
+                                        alt: `Miniatura do vídeo ${title}`,
+                                        fill: true,
+                                        sizes: "(max-width: 760px) 100vw, 50vw"
                                     }, void 0, false, {
                                         fileName: "[project]/app/videos/page.tsx",
-                                        lineNumber: 10,
+                                        lineNumber: 13,
                                         columnNumber: 120
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
@@ -59,49 +74,49 @@ function VideosPage() {
                                         children: "▶"
                                     }, void 0, false, {
                                         fileName: "[project]/app/videos/page.tsx",
-                                        lineNumber: 10,
-                                        columnNumber: 169
+                                        lineNumber: 13,
+                                        columnNumber: 246
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/app/videos/page.tsx",
-                                lineNumber: 10,
+                                lineNumber: 13,
                                 columnNumber: 91
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 children: title
                             }, void 0, false, {
                                 fileName: "[project]/app/videos/page.tsx",
-                                lineNumber: 10,
-                                columnNumber: 225
+                                lineNumber: 13,
+                                columnNumber: 302
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Vídeo identificado no acervo. Reprodução disponível após confirmação do link oficial."
                             }, void 0, false, {
                                 fileName: "[project]/app/videos/page.tsx",
-                                lineNumber: 10,
-                                columnNumber: 241
+                                lineNumber: 13,
+                                columnNumber: 318
                             }, this)
                         ]
                     }, title, true, {
                         fileName: "[project]/app/videos/page.tsx",
-                        lineNumber: 10,
+                        lineNumber: 13,
                         columnNumber: 70
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/videos/page.tsx",
-                lineNumber: 10,
+                lineNumber: 13,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Booking"], {}, void 0, false, {
                 fileName: "[project]/app/videos/page.tsx",
-                lineNumber: 10,
-                columnNumber: 355
+                lineNumber: 13,
+                columnNumber: 432
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/videos/page.tsx",
-        lineNumber: 9,
+        lineNumber: 12,
         columnNumber: 10
     }, this);
 }

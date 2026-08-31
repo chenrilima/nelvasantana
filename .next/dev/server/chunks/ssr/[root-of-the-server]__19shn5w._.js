@@ -15,8 +15,10 @@ __turbopack_context__.s([
     ()=>metadata
 ]);
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/rsc/react-jsx-dev-runtime.js [app-rsc] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/node_modules/next/image.js [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/footer.tsx [app-rsc] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$components$2f$ui$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__ = __turbopack_context__.i("[project]/components/ui.tsx [app-rsc] (ecmascript)");
+;
 ;
 ;
 ;
@@ -33,7 +35,7 @@ function GalleryPage() {
                 intro: "Imagens que revelam diferentes dimensões da presença artística de Nellva Sântana."
             }, void 0, false, {
                 fileName: "[project]/app/galeria/page.tsx",
-                lineNumber: 8,
+                lineNumber: 9,
                 columnNumber: 12
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -46,55 +48,62 @@ function GalleryPage() {
                                 children: "Coleção 01"
                             }, void 0, false, {
                                 fileName: "[project]/app/galeria/page.tsx",
-                                lineNumber: 9,
+                                lineNumber: 10,
                                 columnNumber: 45
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 children: "Nos Palcos"
                             }, void 0, false, {
                                 fileName: "[project]/app/galeria/page.tsx",
-                                lineNumber: 9,
+                                lineNumber: 10,
                                 columnNumber: 82
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Momentos de presença, música e expressão em cena."
                             }, void 0, false, {
                                 fileName: "[project]/app/galeria/page.tsx",
-                                lineNumber: 9,
+                                lineNumber: 10,
                                 columnNumber: 101
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/galeria/page.tsx",
-                        lineNumber: 9,
+                        lineNumber: 10,
                         columnNumber: 37
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                        className: "photo-awaiting",
-                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                            children: [
-                                "Fotografias oficiais",
-                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("br", {}, void 0, false, {
+                        className: "photo-grid",
+                        children: [
+                            "nellva-identidade.jpg",
+                            "mulheres-que-cantam.jpg",
+                            "direcao-musical.jpg",
+                            "danca-de-oz.jpg",
+                            "paixao-de-cristo.jpg"
+                        ].map((src, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("figure", {
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                    src: `/images/${src}`,
+                                    alt: `Nellva Sântana em apresentação — registro ${index + 1}`,
+                                    fill: true,
+                                    sizes: "(max-width: 760px) 100vw, 35vw"
+                                }, void 0, false, {
                                     fileName: "[project]/app/galeria/page.tsx",
-                                    lineNumber: 9,
-                                    columnNumber: 224
-                                }, this),
-                                "aguardando os arquivos originais"
-                            ]
-                        }, void 0, true, {
-                            fileName: "[project]/app/galeria/page.tsx",
-                            lineNumber: 9,
-                            columnNumber: 198
-                        }, this)
+                                    lineNumber: 10,
+                                    columnNumber: 352
+                                }, this)
+                            }, src, false, {
+                                fileName: "[project]/app/galeria/page.tsx",
+                                lineNumber: 10,
+                                columnNumber: 334
+                            }, this))
                     }, void 0, false, {
                         fileName: "[project]/app/galeria/page.tsx",
-                        lineNumber: 9,
+                        lineNumber: 10,
                         columnNumber: 166
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/galeria/page.tsx",
-                lineNumber: 9,
+                lineNumber: 10,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
@@ -107,27 +116,27 @@ function GalleryPage() {
                                 children: "Coleção 02 · Em breve"
                             }, void 0, false, {
                                 fileName: "[project]/app/galeria/page.tsx",
-                                lineNumber: 10,
+                                lineNumber: 11,
                                 columnNumber: 51
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                                 children: "Bastidores"
                             }, void 0, false, {
                                 fileName: "[project]/app/galeria/page.tsx",
-                                lineNumber: 10,
+                                lineNumber: 11,
                                 columnNumber: 99
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Os gestos, encontros e instantes que antecedem a cena."
                             }, void 0, false, {
                                 fileName: "[project]/app/galeria/page.tsx",
-                                lineNumber: 10,
+                                lineNumber: 11,
                                 columnNumber: 118
                             }, this)
                         ]
                     }, void 0, true, {
                         fileName: "[project]/app/galeria/page.tsx",
-                        lineNumber: 10,
+                        lineNumber: 11,
                         columnNumber: 43
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -136,29 +145,29 @@ function GalleryPage() {
                             children: "Fotografias em breve."
                         }, void 0, false, {
                             fileName: "[project]/app/galeria/page.tsx",
-                            lineNumber: 10,
+                            lineNumber: 11,
                             columnNumber: 222
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/app/galeria/page.tsx",
-                        lineNumber: 10,
+                        lineNumber: 11,
                         columnNumber: 188
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/app/galeria/page.tsx",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Booking"], {}, void 0, false, {
                 fileName: "[project]/app/galeria/page.tsx",
-                lineNumber: 10,
+                lineNumber: 11,
                 columnNumber: 266
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/galeria/page.tsx",
-        lineNumber: 8,
+        lineNumber: 9,
         columnNumber: 10
     }, this);
 }
