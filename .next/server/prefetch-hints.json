@@ -9,10 +9,10 @@
     }
   },
   "/_not-found": {
-    "hints": 64,
+    "hints": 0,
     "slots": {
       "children": {
-        "hints": 96,
+        "hints": 64,
         "slots": {
           "children": {
             "hints": 160,
@@ -23,10 +23,10 @@
     }
   },
   "/agenda": {
-    "hints": 64,
+    "hints": 0,
     "slots": {
       "children": {
-        "hints": 96,
+        "hints": 64,
         "slots": {
           "children": {
             "hints": 160,
@@ -37,10 +37,10 @@
     }
   },
   "/artista": {
-    "hints": 64,
+    "hints": 0,
     "slots": {
       "children": {
-        "hints": 96,
+        "hints": 64,
         "slots": {
           "children": {
             "hints": 160,
@@ -51,10 +51,10 @@
     }
   },
   "/contato": {
-    "hints": 64,
+    "hints": 0,
     "slots": {
       "children": {
-        "hints": 96,
+        "hints": 64,
         "slots": {
           "children": {
             "hints": 160,
@@ -65,10 +65,10 @@
     }
   },
   "/galeria": {
-    "hints": 64,
+    "hints": 0,
     "slots": {
       "children": {
-        "hints": 96,
+        "hints": 64,
         "slots": {
           "children": {
             "hints": 160,
@@ -79,10 +79,10 @@
     }
   },
   "/imprensa": {
-    "hints": 64,
+    "hints": 0,
     "slots": {
       "children": {
-        "hints": 96,
+        "hints": 64,
         "slots": {
           "children": {
             "hints": 160,
@@ -93,10 +93,10 @@
     }
   },
   "/musica": {
-    "hints": 64,
+    "hints": 0,
     "slots": {
       "children": {
-        "hints": 96,
+        "hints": 64,
         "slots": {
           "children": {
             "hints": 160,
@@ -107,19 +107,19 @@
     }
   },
   "/": {
-    "hints": 64,
+    "hints": 0,
     "slots": {
       "children": {
-        "hints": 160,
+        "hints": 128,
         "slots": null
       }
     }
   },
   "/projetos": {
-    "hints": 64,
+    "hints": 0,
     "slots": {
       "children": {
-        "hints": 96,
+        "hints": 64,
         "slots": {
           "children": {
             "hints": 160,
@@ -130,10 +130,10 @@
     }
   },
   "/trajetoria": {
-    "hints": 64,
+    "hints": 0,
     "slots": {
       "children": {
-        "hints": 96,
+        "hints": 64,
         "slots": {
           "children": {
             "hints": 160,
@@ -144,10 +144,10 @@
     }
   },
   "/videos": {
-    "hints": 64,
+    "hints": 0,
     "slots": {
       "children": {
-        "hints": 96,
+        "hints": 64,
         "slots": {
           "children": {
             "hints": 160,

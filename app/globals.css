@@ -26,9 +26,14 @@ h1,h2,h3{font-family:var(--font-display),var(--font-serif),Georgia,serif}
 .hero-copy>p:not(.eyebrow),.hero-orbit span{font-family:var(--font-display),var(--font-serif),serif}
 
 .menu-trigger{width:46px;height:46px;touch-action:manipulation}
-.menu-trigger span{width:25px;height:2px;margin:5px auto;pointer-events:none}
+.menu-trigger span{width:25px;height:2px;min-height:2px;margin:3px auto;flex:0 0 2px;pointer-events:none}
+.menu-toggle{position:fixed;z-index:1001;top:calc((var(--header) - 46px)/2);right:calc(4vw + 9px);width:28px;height:46px;margin:0;opacity:0;cursor:pointer}
+.menu-toggle:focus-visible~.site-header .menu-trigger{outline:2px solid var(--gold);outline-offset:2px}
+.menu-trigger{display:flex;flex-direction:column;justify-content:center;align-items:center;padding:7px;cursor:pointer}
 .menu-overlay{pointer-events:none}
 .menu-overlay.is-open{pointer-events:auto}
+#menu-toggle:checked~.menu-overlay{visibility:visible;opacity:1;pointer-events:auto}
+.menu-close{display:grid;place-items:center;cursor:pointer}
 .menu-panel{padding-top:6vh}
 .menu-panel nav{margin:3vh 0}
 .menu-panel nav a{padding:.15vh 0;font-family:var(--font-elegant),var(--font-serif),serif;font-size:clamp(1.15rem,1.8vw,1.75rem)}
@@ -64,6 +69,7 @@ h1,h2,h3{font-family:var(--font-display),var(--font-serif),Georgia,serif}
 
 @media(max-width:760px){
   .site-header .brand{font-size:.9rem}
+  .menu-toggle{right:25px}
   .menu-panel{padding-top:7vh}
   .menu-panel nav{margin:4vh 0 2vh}
   .menu-panel nav a{font-size:1.25rem;padding:.12rem 0}

@@ -1537,9 +1537,37 @@ h1, h2, h3 {
 
 .menu-trigger span {
   pointer-events: none;
+  flex: 0 0 2px;
   width: 25px;
   height: 2px;
-  margin: 5px auto;
+  min-height: 2px;
+  margin: 3px auto;
+}
+
+.menu-toggle {
+  z-index: 1001;
+  top: calc((var(--header) - 46px)/2);
+  opacity: 0;
+  cursor: pointer;
+  width: 28px;
+  height: 46px;
+  margin: 0;
+  position: fixed;
+  right: calc(4vw + 9px);
+}
+
+.menu-toggle:focus-visible ~ .site-header .menu-trigger {
+  outline: 2px solid var(--gold);
+  outline-offset: 2px;
+}
+
+.menu-trigger {
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 7px;
+  display: flex;
 }
 
 .menu-overlay {
@@ -1548,6 +1576,18 @@ h1, h2, h3 {
 
 .menu-overlay.is-open {
   pointer-events: auto;
+}
+
+#menu-toggle:checked ~ .menu-overlay {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.menu-close {
+  cursor: pointer;
+  place-items: center;
+  display: grid;
 }
 
 .menu-panel {
@@ -1714,6 +1754,10 @@ h1, h2, h3 {
 @media (max-width: 760px) {
   .site-header .brand {
     font-size: .9rem;
+  }
+
+  .menu-toggle {
+    right: 25px;
   }
 
   .menu-panel {
