@@ -1,14 +1,9 @@
 {
-  "/agenda/page": "app/agenda/page.js",
   "/artista/page": "app/artista/page.js",
-  "/contato/page": "app/contato/page.js",
-  "/galeria/page": "app/galeria/page.js",
-  "/imprensa/page": "app/imprensa/page.js",
+  "/icon/route": "app/icon/route.js",
   "/musica/page": "app/musica/page.js",
   "/page": "app/page.js",
   "/projetos/page": "app/projetos/page.js",
-  "/robots.txt/route": "app/robots.txt/route.js",
-  "/sitemap.xml/route": "app/sitemap.xml/route.js",
   "/trajetoria/page": "app/trajetoria/page.js",
   "/videos/page": "app/videos/page.js"
 }
