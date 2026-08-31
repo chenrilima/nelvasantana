@@ -1,0 +1,16 @@
+{
+  "/_global-error/page": "/_global-error",
+  "/_not-found/page": "/_not-found",
+  "/agenda/page": "/agenda",
+  "/artista/page": "/artista",
+  "/contato/page": "/contato",
+  "/galeria/page": "/galeria",
+  "/imprensa/page": "/imprensa",
+  "/musica/page": "/musica",
+  "/page": "/",
+  "/projetos/page": "/projetos",
+  "/robots.txt/route": "/robots.txt",
+  "/sitemap.xml/route": "/sitemap.xml",
+  "/trajetoria/page": "/trajetoria",
+  "/videos/page": "/videos"
+}
