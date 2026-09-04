@@ -28,16 +28,6 @@ const metadata = {
     title: "Vídeos",
     description: "Videoteca artística de Nellva Sântana."
 };
-const thumbnails = [
-    "video-stizzoso.jpg",
-    "video-an-die-musik.jpg",
-    "video-ave-maria.jpg",
-    "video-amor-que-nao-vivi.jpg",
-    "video-pai-nosso.jpg",
-    "video-xote-das-meninas.jpg",
-    "video-uirapuru.jpg",
-    "video-canto-veronica.jpg"
-];
 function VideosPage() {
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Fragment"], {
         children: [
@@ -48,75 +38,64 @@ function VideosPage() {
                 intro: "Um arquivo de interpretações, encontros e repertórios que atravessam a trajetória de Nellva Sântana."
             }, void 0, false, {
                 fileName: "[project]/app/videos/page.tsx",
-                lineNumber: 12,
+                lineNumber: 10,
                 columnNumber: 12
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
                 className: "video-library",
-                children: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["videos"].map((title, index)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
+                children: __TURBOPACK__imported__module__$5b$project$5d2f$data$2f$content$2e$ts__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["videos"].map((video)=>/*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("article", {
                         children: [
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                                 className: "video-frame",
-                                children: [
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                        src: `/images/${thumbnails[index]}`,
-                                        alt: `Miniatura do vídeo ${title}`,
-                                        fill: true,
-                                        sizes: "(max-width: 760px) 100vw, 50vw"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/videos/page.tsx",
-                                        lineNumber: 13,
-                                        columnNumber: 120
-                                    }, this),
-                                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("span", {
-                                        className: "play",
-                                        "aria-hidden": "true",
-                                        children: "▶"
-                                    }, void 0, false, {
-                                        fileName: "[project]/app/videos/page.tsx",
-                                        lineNumber: 13,
-                                        columnNumber: 246
-                                    }, this)
-                                ]
-                            }, void 0, true, {
-                                fileName: "[project]/app/videos/page.tsx",
-                                lineNumber: 13,
-                                columnNumber: 91
-                            }, this),
-                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
-                                children: title
+                                children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                    src: video.thumbnail.src,
+                                    alt: video.thumbnail.alt,
+                                    fill: true,
+                                    sizes: "(max-width: 760px) 100vw, 50vw"
+                                }, void 0, false, {
+                                    fileName: "[project]/app/videos/page.tsx",
+                                    lineNumber: 11,
+                                    columnNumber: 116
+                                }, this)
                             }, void 0, false, {
                                 fileName: "[project]/app/videos/page.tsx",
-                                lineNumber: 13,
-                                columnNumber: 302
+                                lineNumber: 11,
+                                columnNumber: 87
+                            }, this),
+                            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
+                                children: video.title
+                            }, void 0, false, {
+                                fileName: "[project]/app/videos/page.tsx",
+                                lineNumber: 11,
+                                columnNumber: 227
                             }, this),
                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                                 children: "Vídeo identificado no acervo. Reprodução disponível após confirmação do link oficial."
                             }, void 0, false, {
                                 fileName: "[project]/app/videos/page.tsx",
-                                lineNumber: 13,
-                                columnNumber: 318
+                                lineNumber: 11,
+                                columnNumber: 249
                             }, this)
                         ]
-                    }, title, true, {
+                    }, video.id, true, {
                         fileName: "[project]/app/videos/page.tsx",
-                        lineNumber: 13,
-                        columnNumber: 70
+                        lineNumber: 11,
+                        columnNumber: 63
                     }, this))
             }, void 0, false, {
                 fileName: "[project]/app/videos/page.tsx",
-                lineNumber: 13,
+                lineNumber: 11,
                 columnNumber: 5
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$components$2f$footer$2e$tsx__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["Booking"], {}, void 0, false, {
                 fileName: "[project]/app/videos/page.tsx",
-                lineNumber: 13,
-                columnNumber: 432
+                lineNumber: 11,
+                columnNumber: 363
             }, this)
         ]
     }, void 0, true, {
         fileName: "[project]/app/videos/page.tsx",
-        lineNumber: 12,
+        lineNumber: 10,
         columnNumber: 10
     }, this);
 }
@@ -267,6 +246,8 @@ __turbopack_context__.s([
     ()=>biography,
     "identity",
     ()=>identity,
+    "performanceImages",
+    ()=>performanceImages,
     "performances",
     ()=>performances,
     "projects",
@@ -335,16 +316,79 @@ const projects = [
         text: "Concerto de Música de Câmara dedicado à Canção Erudita Brasileira, apresentando obras autorais em parceria com compositores. O repertório valoriza a criação contemporânea e a identidade musical brasileira."
     }
 ];
-const videos = [
-    "Nellva Sântana - Stizzoso, mio stizzoso (La Serva Padrona - G.B. Pergolesi)",
-    "Soprano Nellva Sântana - An die Musik (Franz Schubert)",
-    "Ave Maria - Franz Schubert (64ª Paixão de Cristo - Taboão da Serra) - 'Coração de Maria'",
-    "'Amor Que Não Vivi' - 'Duo Intime' - Canção Erudita Brasileira - Autoral",
-    "Nellva Sântana - Pai Nosso (Carlos Zink)",
-    "Mulheres Que Cantam - Xote das Meninas - Luiz Gonzaga",
-    "Uirapuru - Waldemar Henrique - Série Lenda Amazônicas",
-    "Canto de Verônica (Paixão de Cristo - Taboão da Serra)"
+const performanceImages = [
+    {
+        src: "/images/paixao-de-cristo.jpg",
+        alt: "Detalhe de figurino em cena na Paixão de Cristo",
+        fit: "contain"
+    },
+    undefined,
+    undefined,
+    {
+        src: "/images/mulheres-que-cantam.jpg",
+        alt: "Registro panorâmico de Nellva Sântana no Mulheres que Cantam",
+        fit: "contain"
+    },
+    {
+        src: "/images/direcao-musical.jpg",
+        alt: "Nellva Sântana cantando ao lado de músico com violão"
+    },
+    {
+        src: "/images/danca-de-oz.jpg",
+        alt: "Nellva Sântana em cena no espetáculo A Dança de OZ",
+        fit: "contain"
+    }
 ];
+const videoData = [
+    [
+        "stizzoso",
+        "Nellva Sântana — Stizzoso, mio stizzoso (La Serva Padrona — G. B. Pergolesi)",
+        "video-stizzoso.jpg"
+    ],
+    [
+        "an-die-musik",
+        "Soprano Nellva Sântana — An die Musik (Franz Schubert)",
+        "video-an-die-musik.jpg"
+    ],
+    [
+        "ave-maria",
+        "Ave Maria — Franz Schubert (64ª Paixão de Cristo — Taboão da Serra)",
+        "video-ave-maria.jpg"
+    ],
+    [
+        "amor-que-nao-vivi",
+        "Amor Que Não Vivi — Duo Intime — Canção Erudita Brasileira",
+        "video-amor-que-nao-vivi.jpg"
+    ],
+    [
+        "pai-nosso",
+        "Nellva Sântana — Pai Nosso (Carlos Zink)",
+        "video-pai-nosso.jpg"
+    ],
+    [
+        "xote-das-meninas",
+        "Mulheres que Cantam — Xote das Meninas — Luiz Gonzaga",
+        "video-xote-das-meninas.jpg"
+    ],
+    [
+        "uirapuru",
+        "Uirapuru — Waldemar Henrique — Série Lendas Amazônicas",
+        "video-uirapuru.jpg"
+    ],
+    [
+        "canto-veronica",
+        "Canto de Verônica — Paixão de Cristo",
+        "video-canto-veronica.jpg"
+    ]
+];
+const videos = videoData.map(([id, title, image])=>({
+        id,
+        title,
+        thumbnail: {
+            src: `/images/${image}`,
+            alt: `Miniatura de ${title}`
+        }
+    }));
 }),
 ];
 

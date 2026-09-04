@@ -15,7 +15,7 @@ const condensed = Oswald({ subsets: ["latin"], variable: "--font-condensed", wei
 const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl), title: { default: "Nellva Sântana — Site Oficial", template: "%s | Nellva Sântana" },
-  description: "Site oficial de Nellva Sântana, artista cuja trajetória conecta raízes nordestinas, cultura brasileira, interpretação e presença cênica.",
+  description: "Site oficial de Nellva Sântana, cantora e intérprete brasileira. Raízes nordestinas, música brasileira, repertório lírico e presença cênica.",
   alternates: { canonical: "/" }, openGraph: { type: "website", locale: "pt_BR", title: "Nellva Sântana — Site Oficial", description: "Raízes profundas. A mesma essência em cada canção.", siteName: "Nellva Sântana" },
   twitter: { card: "summary_large_image", title: "Nellva Sântana", description: "Raízes profundas. A mesma essência em cada canção." },
 };

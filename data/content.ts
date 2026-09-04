@@ -25,13 +25,27 @@ export const projects = [
   { title: "Canção Erudita Brasileira", summary: "Concerto de Música de Câmara dedicado à Canção Erudita Brasileira.", text: "Concerto de Música de Câmara dedicado à Canção Erudita Brasileira, apresentando obras autorais em parceria com compositores. O repertório valoriza a criação contemporânea e a identidade musical brasileira." },
 ];
 
-export const videos = [
-  "Nellva Sântana - Stizzoso, mio stizzoso (La Serva Padrona - G.B. Pergolesi)",
-  "Soprano Nellva Sântana - An die Musik (Franz Schubert)",
-  "Ave Maria - Franz Schubert (64ª Paixão de Cristo - Taboão da Serra) - 'Coração de Maria'",
-  "'Amor Que Não Vivi' - 'Duo Intime' - Canção Erudita Brasileira - Autoral",
-  "Nellva Sântana - Pai Nosso (Carlos Zink)",
-  "Mulheres Que Cantam - Xote das Meninas - Luiz Gonzaga",
-  "Uirapuru - Waldemar Henrique - Série Lenda Amazônicas",
-  "Canto de Verônica (Paixão de Cristo - Taboão da Serra)",
+export type MediaAsset = { src: string; alt: string; fit?: "cover" | "contain"; position?: string };
+export type Video = { id: string; title: string; thumbnail: MediaAsset; youtubeUrl?: string; featured?: boolean };
+
+export const performanceImages: Array<MediaAsset | undefined> = [
+  { src: "/images/paixao-de-cristo.jpg", alt: "Detalhe de figurino em cena na Paixão de Cristo", fit: "contain" },
+  undefined,
+  undefined,
+  { src: "/images/mulheres-que-cantam.jpg", alt: "Registro panorâmico de Nellva Sântana no Mulheres que Cantam", fit: "contain" },
+  { src: "/images/direcao-musical.jpg", alt: "Nellva Sântana cantando ao lado de músico com violão" },
+  { src: "/images/danca-de-oz.jpg", alt: "Nellva Sântana em cena no espetáculo A Dança de OZ", fit: "contain" },
 ];
+
+const videoData = [
+  ["stizzoso", "Nellva Sântana — Stizzoso, mio stizzoso (La Serva Padrona — G. B. Pergolesi)", "video-stizzoso.jpg"],
+  ["an-die-musik", "Soprano Nellva Sântana — An die Musik (Franz Schubert)", "video-an-die-musik.jpg"],
+  ["ave-maria", "Ave Maria — Franz Schubert (64ª Paixão de Cristo — Taboão da Serra)", "video-ave-maria.jpg"],
+  ["amor-que-nao-vivi", "Amor Que Não Vivi — Duo Intime — Canção Erudita Brasileira", "video-amor-que-nao-vivi.jpg"],
+  ["pai-nosso", "Nellva Sântana — Pai Nosso (Carlos Zink)", "video-pai-nosso.jpg"],
+  ["xote-das-meninas", "Mulheres que Cantam — Xote das Meninas — Luiz Gonzaga", "video-xote-das-meninas.jpg"],
+  ["uirapuru", "Uirapuru — Waldemar Henrique — Série Lendas Amazônicas", "video-uirapuru.jpg"],
+  ["canto-veronica", "Canto de Verônica — Paixão de Cristo", "video-canto-veronica.jpg"],
+] as const;
+
+export const videos: Video[] = videoData.map(([id, title, image]) => ({ id, title, thumbnail: { src: `/images/${image}`, alt: `Miniatura de ${title}` } }));
