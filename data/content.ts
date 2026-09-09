@@ -25,16 +25,26 @@ export const projects = [
   { title: "Canção Erudita Brasileira", summary: "Concerto de Música de Câmara dedicado à Canção Erudita Brasileira.", text: "Concerto de Música de Câmara dedicado à Canção Erudita Brasileira, apresentando obras autorais em parceria com compositores. O repertório valoriza a criação contemporânea e a identidade musical brasileira." },
 ];
 
-export type MediaAsset = { src: string; alt: string; fit?: "cover" | "contain"; position?: string };
-export type Video = { id: string; title: string; thumbnail: MediaAsset; youtubeUrl?: string; featured?: boolean };
+export type MediaAsset = { src: string; alt: string; width: number; height: number };
+export type Video = { id: string; title: string; thumbnail?: MediaAsset; youtubeUrl?: string; featured?: boolean; priority?: number };
 
-export const performanceImages: Array<MediaAsset | undefined> = [
-  { src: "/images/paixao-de-cristo.jpg", alt: "Detalhe de figurino em cena na Paixão de Cristo", fit: "contain" },
-  undefined,
-  undefined,
-  { src: "/images/mulheres-que-cantam.jpg", alt: "Registro panorâmico de Nellva Sântana no Mulheres que Cantam", fit: "contain" },
-  { src: "/images/direcao-musical.jpg", alt: "Nellva Sântana cantando ao lado de músico com violão" },
-  { src: "/images/danca-de-oz.jpg", alt: "Nellva Sântana em cena no espetáculo A Dança de OZ", fit: "contain" },
+export const performanceImages: MediaAsset[] = [
+  { src: "/images/paixao-2025.png", alt: "Nellva como Sentimento de Maria, junto ao intérprete de Jesus", width: 1080, height: 1350 },
+  { src: "/images/paixao-2023-veronica.png", alt: "Nellva como Verônica, segurando o tecido em cena", width: 1080, height: 1350 },
+  { src: "/images/paixao-2019.jpg", alt: "Nellva no papel de Anjo na encenação da Paixão de Cristo", width: 1024, height: 830 },
+  { src: "/images/mulheres-que-cantam.png", alt: "Montagem panorâmica da apresentação no Mulheres que Cantam", width: 1920, height: 1080 },
+  { src: "/images/direcao-musical.png", alt: "Nellva cantando ao lado de músico com violão", width: 2000, height: 2000 },
+  { src: "/images/danca-de-oz.png", alt: "Nellva cantando em cena ao lado de uma bailarina em A Dança de OZ", width: 2000, height: 2000 },
+];
+
+export const gallery: (MediaAsset & { caption: string })[] = [
+  { src: "/images/nellva-palco.jpg", alt: "Nellva canta com os braços abertos sob a iluminação do palco", width: 3888, height: 2592, caption: "A voz e o gesto" },
+  { src: "/images/nellva-contrabaixo.jpg", alt: "Nellva ao microfone, acompanhada por contrabaixista", width: 2592, height: 3888, caption: "Encontros musicais" },
+  { src: "/images/nellva-banda.jpg", alt: "Nellva acompanhada por contrabaixo, percussão e violão", width: 1280, height: 682, caption: "Música em conjunto" },
+  { src: "/images/nellva-cancao.jpg", alt: "Nellva de vestido terracota, cantando ao microfone", width: 2592, height: 3888, caption: "Presença em cena" },
+  { src: "/images/nellva-expressao.jpg", alt: "Nellva canta com o braço estendido, acompanhada por músicos", width: 3888, height: 2592, caption: "Expressão e brasilidade" },
+  { src: "/images/paixao-2025-retrato.png", alt: "Nellva em cena com manto azul e jarro nas mãos", width: 1080, height: 1350, caption: "66ª Paixão de Cristo · 2025" },
+  { src: "/images/paixao-2023-cena.png", alt: "Cena da Paixão de Cristo com três intérpretes no palco", width: 1080, height: 1350, caption: "64ª Paixão de Cristo · 2023" },
 ];
 
 const videoData = [
@@ -42,10 +52,24 @@ const videoData = [
   ["an-die-musik", "Soprano Nellva Sântana — An die Musik (Franz Schubert)", "video-an-die-musik.jpg"],
   ["ave-maria", "Ave Maria — Franz Schubert (64ª Paixão de Cristo — Taboão da Serra)", "video-ave-maria.jpg"],
   ["amor-que-nao-vivi", "Amor Que Não Vivi — Duo Intime — Canção Erudita Brasileira", "video-amor-que-nao-vivi.jpg"],
-  ["pai-nosso", "Nellva Sântana — Pai Nosso (Carlos Zink)", "video-pai-nosso.jpg"],
+  ["pai-nosso", "Nellva Sântana — Pai Nosso (Carlos Zink)", "video-pai-nosso.png"],
   ["xote-das-meninas", "Mulheres que Cantam — Xote das Meninas — Luiz Gonzaga", "video-xote-das-meninas.jpg"],
   ["uirapuru", "Uirapuru — Waldemar Henrique — Série Lendas Amazônicas", "video-uirapuru.jpg"],
   ["canto-veronica", "Canto de Verônica — Paixão de Cristo", "video-canto-veronica.jpg"],
 ] as const;
 
-export const videos: Video[] = videoData.map(([id, title, image]) => ({ id, title, thumbnail: { src: `/images/${image}`, alt: `Miniatura de ${title}` } }));
+const officialVideoUrls: Record<string, string> = {
+  "xote-das-meninas": "https://www.youtube.com/watch?v=_pU421Heq0U",
+  stizzoso: "https://www.youtube.com/watch?v=NGx3by6RBeA",
+  uirapuru: "https://www.youtube.com/shorts/vivcTedT9bE",
+  "an-die-musik": "https://www.youtube.com/watch?v=R8wflclz8dw",
+};
+
+export const videos: Video[] = [
+  { id: "bate-coracao", title: "Bate Coração — Nellva Sântana — Elba Ramalho", featured: true, priority: 1 },
+  ...videoData.map(([id, title, image]) => ({ id, title, youtubeUrl: officialVideoUrls[id], priority: id === "xote-das-meninas" ? 2 : 10, thumbnail: { src: `/images/${image}`, alt: `Miniatura de ${title}`, width: 1080, height: 1080 } })),
+];
+
+export function orderedVideos(items: Video[]) {
+  return items.filter(video => video.youtubeUrl || video.thumbnail).sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)) || (a.priority ?? 99) - (b.priority ?? 99));
+}

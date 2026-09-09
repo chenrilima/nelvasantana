@@ -108,13 +108,15 @@ __turbopack_context__.s([
     ()=>robots
 ]);
 function robots() {
-    const base = process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000";
+    const base = process.env.NEXT_PUBLIC_SITE_URL;
     return {
         rules: {
             userAgent: "*",
             allow: "/"
         },
-        sitemap: `${base}/sitemap.xml`
+        ...base ? {
+            sitemap: new URL("/sitemap.xml", base).href
+        } : {}
     };
 }
 }),

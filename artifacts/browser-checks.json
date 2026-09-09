@@ -1,0 +1,146 @@
+{
+  "results": [
+    {
+      "width": 375,
+      "height": 812,
+      "overflow": false,
+      "anchors": true,
+      "broken": [],
+      "iframes": 0
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "overflow": false,
+      "anchors": true,
+      "broken": [],
+      "iframes": 0
+    },
+    {
+      "width": 430,
+      "height": 932,
+      "overflow": false,
+      "anchors": true,
+      "broken": [],
+      "iframes": 0
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "overflow": false,
+      "anchors": true,
+      "broken": [],
+      "iframes": 0
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "overflow": false,
+      "anchors": true,
+      "broken": [],
+      "iframes": 0
+    },
+    {
+      "width": 1280,
+      "height": 800,
+      "overflow": false,
+      "anchors": true,
+      "broken": [],
+      "iframes": 0
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "overflow": false,
+      "anchors": true,
+      "broken": [],
+      "iframes": 0
+    },
+    {
+      "width": 1920,
+      "height": 1080,
+      "overflow": false,
+      "anchors": true,
+      "broken": [],
+      "iframes": 0
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "overflow": false,
+      "anchors": true,
+      "broken": [],
+      "iframes": 0
+    },
+    {
+      "width": 1280,
+      "height": 600,
+      "overflow": false,
+      "anchors": true,
+      "broken": [],
+      "iframes": 0
+    }
+  ],
+  "interaction": {
+    "trapLast": true,
+    "trapFirst": true,
+    "restored": true,
+    "anchorFocus": true,
+    "railKeyboard": true,
+    "facade": true
+  },
+  "redirects": [
+    {
+      "route": "artista",
+      "status": 308,
+      "location": "/#artista"
+    },
+    {
+      "route": "trajetoria",
+      "status": 308,
+      "location": "/#performances"
+    },
+    {
+      "route": "projetos",
+      "status": 308,
+      "location": "/#projetos"
+    },
+    {
+      "route": "videos",
+      "status": 308,
+      "location": "/#videos"
+    },
+    {
+      "route": "musica",
+      "status": 308,
+      "location": "/#musica"
+    },
+    {
+      "route": "galeria",
+      "status": 308,
+      "location": "/#galeria"
+    },
+    {
+      "route": "agenda",
+      "status": 308,
+      "location": "/#agenda"
+    },
+    {
+      "route": "imprensa",
+      "status": 308,
+      "location": "/#imprensa"
+    },
+    {
+      "route": "contato",
+      "status": 308,
+      "location": "/#contato"
+    }
+  ],
+  "errors": [],
+  "consoleErrors": [],
+  "additional": {
+    "reducedMotionFocus": true,
+    "railButton": true,
+    "touchSwipe": true
+  }
+}
