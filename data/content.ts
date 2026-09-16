@@ -36,8 +36,9 @@ export const performances = [
 ];
 
 export const projects = [
-  { title: "Noutra Bossa", summary: "Músicas autorais e releituras em parceria, disponíveis no Spotify e YouTube.", text: "Entre a criação e a reinvenção, o Noutra Bossa apresenta um repertório de músicas autorais e releituras em parceria, revelando uma identidade musical singular. Disponível no Spotify e no YouTube, o projeto amplia o diálogo entre tradição, sensibilidade e contemporaneidade." },
-  { title: "Canção Erudita Brasileira", summary: "Concerto de Música de Câmara dedicado à Canção Erudita Brasileira.", text: "Concerto de Música de Câmara dedicado à Canção Erudita Brasileira, apresentando obras autorais em parceria com compositores. O repertório valoriza a criação contemporânea e a identidade musical brasileira." },
+  { title: "Noutra Bossa", image: "/images/projeto-noutra-bossa.jpg", imageAlt: "Capa do projeto Noutra Bossa", youtube: "https://www.youtube.com/watch?v=jr-tpTtKdFI&list=RDjr-tpTtKdFI&start_radio=1", instagram: "https://www.instagram.com/noutrabossa?igsh=MTNkb2c0YTdhZndqNQ%3D%3D", summary: "Músicas autorais e releituras em parceria, disponíveis no Spotify e YouTube.", text: "Entre a criação e a reinvenção, o Noutra Bossa apresenta um repertório de músicas autorais e releituras em parceria, revelando uma identidade musical singular. Disponível no Spotify e no YouTube, o projeto amplia o diálogo entre tradição, sensibilidade e contemporaneidade." },
+  // The existing cover identifies Duo Intimè; the approved copy below describes its repertoire.
+  { title: "Duo Intimè", image: "/images/projeto-cancao-erudita.jpg", imageAlt: "Logotipo do Duo Intimè com violão", youtube: "https://www.youtube.com/watch?v=A2tG0UlGDE0&list=RDA2tG0UlGDE0&start_radio=1", instagram: "https://www.instagram.com/duo.intime?igsh=MXhxcndnNGJ6OTVocg%3D%3D", summary: "Concerto de Música de Câmara dedicado à Canção Erudita Brasileira.", text: "Concerto de Música de Câmara dedicado à Canção Erudita Brasileira, apresentando obras autorais em parceria com compositores. O repertório valoriza a criação contemporânea e a identidade musical brasileira." },
 ];
 
 export type MediaAsset = { src: string; alt: string; width: number; height: number };

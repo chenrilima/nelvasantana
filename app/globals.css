@@ -78,7 +78,7 @@
 .performance-stack h3{font-size:clamp(2.5rem,4.5vw,5rem);margin:.25em 0}
 .performance-stack article>div>p:last-child{max-width:590px;color:#c7bbb4}
 .projects-chapter{padding:14vh max(5vw,calc((100vw - 1360px)/2))}
-.projects-chapter>.section-title{display:grid;grid-template-columns:1fr 1fr;align-items:end;margin-bottom:8vh}
+.projects-chapter>.section-title{display:block;text-align:center;margin-bottom:8vh}
 .one-projects{display:grid;grid-template-columns:1fr 1fr;gap:5vw}
 .one-projects article{border-top:1px solid var(--line);padding-top:2rem}
 .one-projects figure{position:relative;aspect-ratio:16/9;margin:0 0 2rem;background:#21130f;overflow:hidden}
@@ -462,3 +462,10 @@ section:focus{outline:none}
   .video-rail article.featured{flex-basis:86vw}
   .video-dialog{padding:.85rem}
 }
+
+/* Etapa 6 — Parcerias Musicais */
+.project-social-links { display: flex; gap: .75rem; margin-top: 1.5rem; }
+.project-social-links a { display: inline-flex; align-items: center; justify-content: center; width: 44px; height: 44px; flex-shrink: 0; color: var(--ink); border: 1px solid var(--line); border-radius: 50%; transition: color 160ms ease, background-color 160ms ease; }
+.project-social-links a:hover, .project-social-links a:focus-visible { color: var(--paper); background-color: var(--ink); }
+.project-social-links a:focus-visible { outline: 2px solid var(--ink); outline-offset: 4px; }
+@media (prefers-reduced-motion: reduce) { .project-social-links a { transition: none; } }

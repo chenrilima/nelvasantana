@@ -57,8 +57,30 @@ export default function Home() {
     </section>
 
     <section className="projects-chapter anchor-section" id="projetos" tabIndex={-1}>
-      <SectionTitle eyebrow="Projetos artísticos" intro="Cada projeto é concebido como uma narrativa em que som, cultura e sentimento se entrelaçam.">A curadoria <em>da canção</em></SectionTitle>
-      <div className="one-projects">{projects.map((project, index) => <article key={project.title}><figure className={index ? "contain" : ""}><Image src={index ? "/images/projeto-cancao-erudita.jpg" : "/images/projeto-noutra-bossa.jpg"} alt={`Imagem do projeto ${project.title}`} fill sizes="(max-width: 760px) 100vw, 48vw" /></figure><div><p className="eyebrow">Obra artística</p><h3>{project.title}</h3><p className="project-summary">{project.summary}</p><p>{project.text}</p></div></article>)}</div>
+      <header className="section-title"><h2>Parcerias <em>Musicais</em></h2></header>
+      <div className="one-projects">{projects.map((project) => (
+        <article key={project.title}>
+          <figure className={project.title === "Duo Intimè" ? "contain" : undefined}><Image src={project.image} alt={project.imageAlt} fill sizes="(max-width: 760px) 100vw, 48vw" /></figure>
+          <div>
+            <h3>{project.title}</h3>
+            <p className="project-summary">{project.summary}</p>
+            <p>{project.text}</p>
+            <div className="project-social-links">
+              <a href={project.youtube} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} no YouTube`}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                  <path d="M21 7.2a2.7 2.7 0 0 0-1.9-1.9C17.4 4.8 12 4.8 12 4.8s-5.4 0-7.1.5A2.7 2.7 0 0 0 3 7.2 28 28 0 0 0 2.5 12 28 28 0 0 0 3 16.8a2.7 2.7 0 0 0 1.9 1.9c1.7.5 7.1.5 7.1.5s5.4 0 7.1-.5a2.7 2.7 0 0 0 1.9-1.9 28 28 0 0 0 .5-4.8 28 28 0 0 0-.5-4.8Z" stroke="currentColor" strokeWidth="1.7" />
+                  <path d="m10 8.5 6 3.5-6 3.5Z" fill="currentColor" />
+                </svg>
+              </a>
+              <a href={project.instagram} target="_blank" rel="noopener noreferrer" aria-label={`${project.title} no Instagram`}>
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                  <g stroke="currentColor" strokeWidth="1.7"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></g>
+                </svg>
+              </a>
+            </div>
+          </div>
+        </article>
+      ))}</div>
     </section>
 
     <section className="videos-chapter anchor-section" id="videos" tabIndex={-1}>
