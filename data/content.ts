@@ -1,3 +1,9 @@
+export const heroSocialLinks = [
+  { id: "instagram", name: "Instagram", href: "https://www.instagram.com/nellvasantanacantora/" },
+  { id: "youtube", name: "YouTube", href: "https://www.youtube.com/@nellvasantanacantora" },
+  { id: "facebook", name: "Facebook", href: "https://www.facebook.com/share/1JkPq99AjH/" },
+] as const;
+
 export const biography = [
   "Nascida e criada no interior da Bahia, Nellva Sântana traz em sua essência as cores, os ritmos e as narrativas que moldam a identidade cultural do Nordeste brasileiro. Cresceu imersa em manifestações populares como as Festas Juninas, a Folia de Reis, o Bumba Meu Boi e o Carnaval, vivências que despertaram, desde cedo, sua relação profunda com a música e permanecem como alicerce de sua identidade artística.",
   "Ao longo da sua formação, ampliou esse universo ao dedicar-se também ao estudo da canção brasileira, da música de concerto e de diferentes repertórios vocais, construindo uma trajetória marcada pelo diálogo entre tradição e técnica, memória e interpretação.",

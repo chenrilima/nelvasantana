@@ -3,7 +3,7 @@ import { VideoCard } from "@/components/video-card";
 import { Booking } from "@/components/footer";
 import { ScrollRail } from "@/components/scroll-rail";
 import { SectionTitle } from "@/components/ui";
-import { biography, gallery, identity, orderedVideos, performanceImages, performances, projects, videos } from "@/data/content";
+import { biography, gallery, heroSocialLinks, identity, orderedVideos, performanceImages, performances, projects, videos } from "@/data/content";
 
 export default function Home() {
   return <>
@@ -12,6 +12,17 @@ export default function Home() {
         <p className="eyebrow">Cantora · intérprete · artista brasileira</p>
         <h1 aria-label="Nellva Sântana"><span className="hero-first-name"><span className="hero-initial">N</span>ellva</span>{" "}<span className="hero-surname">Sântana</span></h1>
         <p className="hero-line">Minha voz, meu canto...</p>
+        <div className="hero-social-links">
+          {heroSocialLinks.map(({ id, name, href }) => (
+            <a key={id} href={href} target="_blank" rel="noopener noreferrer" aria-label={`${name} de Nellva Sântana`}>
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" aria-hidden="true" focusable="false">
+                {id === "instagram" && <g stroke="currentColor" strokeWidth="1.7"><rect x="3" y="3" width="18" height="18" rx="5" /><circle cx="12" cy="12" r="4" /><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" /></g>}
+                {id === "youtube" && <><path d="M21 7.2a2.7 2.7 0 0 0-1.9-1.9C17.4 4.8 12 4.8 12 4.8s-5.4 0-7.1.5A2.7 2.7 0 0 0 3 7.2 28 28 0 0 0 2.5 12 28 28 0 0 0 3 16.8a2.7 2.7 0 0 0 1.9 1.9c1.7.5 7.1.5 7.1.5s5.4 0 7.1-.5a2.7 2.7 0 0 0 1.9-1.9 28 28 0 0 0 .5-4.8 28 28 0 0 0-.5-4.8Z" stroke="currentColor" strokeWidth="1.7" /><path d="m10 8.5 6 3.5-6 3.5Z" fill="currentColor" /></>}
+                {id === "facebook" && <path d="M14 22v-9h3l.5-3.5H14V7.3c0-1 .3-1.8 1.8-1.8H18V2.4a26 26 0 0 0-2.8-.2c-2.8 0-4.7 1.7-4.7 4.8v2.5H7V13h3.5v9Z" fill="currentColor" />}
+              </svg>
+            </a>
+          ))}
+        </div>
         <a className="hero-cue" href="#artista">A artista <span aria-hidden="true">↓</span></a>
       </div>
       <figure className="one-hero-photo"><Image src="/images/nellva-hero.jpg" alt="Nellva Sântana cantando ao microfone, de vestido floral" fill loading="eager" sizes="(max-width: 900px) 100vw, 900px" /></figure>
