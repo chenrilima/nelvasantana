@@ -3,7 +3,7 @@ import { VideoCard } from "@/components/video-card";
 import { Booking } from "@/components/footer";
 import { ScrollRail } from "@/components/scroll-rail";
 import { SectionTitle } from "@/components/ui";
-import { biography, gallery, heroSocialLinks, identity, identityStyles, orderedVideos, performanceImages, performances, projects, videos } from "@/data/content";
+import { biography, gallery, heroSocialLinks, identity, identityStyles, performanceImages, performances, projects, videos } from "@/data/content";
 
 export default function Home() {
   return <>
@@ -62,8 +62,8 @@ export default function Home() {
     </section>
 
     <section className="videos-chapter anchor-section" id="videos" tabIndex={-1}>
-      <div className="chapter-heading"><SectionTitle eyebrow="Videoteca">Canções <em>em cena</em></SectionTitle><p>Interpretações, encontros e repertórios reunidos em um arquivo audiovisual. Da música brasileira ao repertório lírico.</p></div>
-      <ScrollRail label="Videoteca de Nellva Sântana" className="video-rail">{orderedVideos(videos).map(video => <VideoCard key={video.id} video={video} />)}</ScrollRail>
+      <div className="chapter-heading"><SectionTitle eyebrow="AUDIOVISUAL">Vídeos &amp; <em>Performances</em></SectionTitle></div>
+      <ScrollRail label="Vídeos & Performances de Nellva Sântana" className="video-rail">{videos.map(video => <VideoCard key={video.id} video={video} />)}</ScrollRail>
     </section>
 
     <section className="music-chapter anchor-section" id="musica" tabIndex={-1}>

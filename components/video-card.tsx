@@ -1,22 +1,57 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Video } from "@/data/content";
 
 export function VideoCard({ video }: { video: Video }) {
   const [playing, setPlaying] = useState(false);
-  const url = video.youtubeUrl ? new URL(video.youtubeUrl) : undefined;
-  const youtubeId = url?.searchParams.get("v") || url?.pathname.split("/").pop();
-  return <article className={video.featured ? "featured" : ""}>
+  const dialog = useRef<HTMLDialogElement>(null);
+  const trigger = useRef<HTMLButtonElement>(null);
+  const titleId = `video-${video.id}`;
+
+  useEffect(() => {
+    if (!playing) return;
+    const modal = dialog.current;
+    const opener = trigger.current;
+    const previousOverflow = document.body.style.overflow;
+    modal?.showModal();
+    document.body.style.overflow = "hidden";
+    return () => {
+      modal?.close();
+      document.body.style.overflow = previousOverflow;
+      opener?.focus({ preventScroll: true });
+    };
+  }, [playing]);
+
+  return <article className={video.featured ? "featured" : ""} aria-labelledby={titleId}>
     <figure>
-      {playing && youtubeId ? <iframe src={`https://www.youtube-nocookie.com/embed/${youtubeId}?autoplay=1`} title={video.title} allow="autoplay; encrypted-media; picture-in-picture; fullscreen" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" /> : <>
-        {video.thumbnail && <Image src={video.thumbnail.src} alt={video.thumbnail.alt} fill sizes="(max-width: 760px) 86vw, 55vw" />}
-        {youtubeId && <button className="video-play" onClick={() => setPlaying(true)} aria-label={`Reproduzir ${video.title}`}><span aria-hidden="true">▶</span></button>}
-      </>}
+      <Image src={`/images/videos/${video.youtubeId}.jpg`} alt="" fill sizes={video.featured ? "(max-width: 760px) 86vw, 760px" : "(max-width: 760px) 82vw, 560px"} />
+      <button ref={trigger} type="button" className="video-open" onClick={() => setPlaying(true)} aria-label={`Abrir vídeo: ${video.title}`} aria-haspopup="dialog">
+        <span className="video-play" aria-hidden="true">▶</span>
+      </button>
     </figure>
-    <p className="eyebrow">{video.featured ? "Em destaque" : "Vídeo do acervo"}</p>
-    <h3>{video.title}</h3>
-    {video.youtubeUrl && <a className="text-link light" href={video.youtubeUrl} target="_blank" rel="noreferrer">Assistir no YouTube <span>↗</span></a>}
+    <h3 id={titleId}>{video.title}</h3>
+    <a className="text-link light" href={video.youtubeUrl} target="_blank" rel="noopener noreferrer" aria-label={`Assistir ${video.title} no YouTube (nova aba)`}>Assistir no YouTube <span aria-hidden="true">↗</span></a>
+    {playing && <dialog ref={dialog} className={`video-dialog${video.format === "short" ? " video-dialog-short" : ""}`} aria-labelledby={`${titleId}-modal`} onCancel={() => setPlaying(false)} onClose={() => setPlaying(false)} onKeyDown={event => {
+      if (event.key !== "Tab") return;
+      const controls = event.currentTarget.querySelectorAll<HTMLElement>("button, iframe, a[href]");
+      const first = controls[0];
+      const last = controls[controls.length - 1];
+      if (event.shiftKey && document.activeElement === first) {
+        event.preventDefault();
+        last?.focus();
+      } else if (!event.shiftKey && document.activeElement === last) {
+        event.preventDefault();
+        first?.focus();
+      }
+    }}>
+      <div className="video-dialog-heading">
+        <h2 id={`${titleId}-modal`}>{video.title}</h2>
+        <button type="button" className="video-close" onClick={() => setPlaying(false)} aria-label="Fechar vídeo" autoFocus>✕</button>
+      </div>
+      <iframe src={`https://www.youtube-nocookie.com/embed/${video.youtubeId}?autoplay=0&playsinline=1&rel=0`} title={video.title} allow="encrypted-media; picture-in-picture; fullscreen" allowFullScreen referrerPolicy="strict-origin-when-cross-origin" />
+      <a className="text-link light" href={video.youtubeUrl} target="_blank" rel="noopener noreferrer">Abrir no YouTube <span aria-hidden="true">↗</span></a>
+    </dialog>}
   </article>;
 }

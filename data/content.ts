@@ -41,7 +41,7 @@ export const projects = [
 ];
 
 export type MediaAsset = { src: string; alt: string; width: number; height: number };
-export type Video = { id: string; title: string; thumbnail?: MediaAsset; youtubeUrl?: string; featured?: boolean; priority?: number };
+export type Video = { id: string; title: string; youtubeUrl: string; youtubeId: string; format: "video" | "short"; featured?: boolean };
 
 export const performanceImages: MediaAsset[] = [
   { src: "/images/paixao-2025.png", alt: "Nellva como Sentimento de Maria, junto ao intérprete de Jesus", width: 1080, height: 1350 },
@@ -62,29 +62,70 @@ export const gallery: (MediaAsset & { caption: string })[] = [
   { src: "/images/paixao-2023-cena.png", alt: "Cena da Paixão de Cristo com três intérpretes no palco", width: 1080, height: 1350, caption: "64ª Paixão de Cristo · 2023" },
 ];
 
-const videoData = [
-  ["stizzoso", "Nellva Sântana — Stizzoso, mio stizzoso (La Serva Padrona — G. B. Pergolesi)", "video-stizzoso.jpg"],
-  ["an-die-musik", "Soprano Nellva Sântana — An die Musik (Franz Schubert)", "video-an-die-musik.jpg"],
-  ["ave-maria", "Ave Maria — Franz Schubert (64ª Paixão de Cristo — Taboão da Serra)", "video-ave-maria.jpg"],
-  ["amor-que-nao-vivi", "Amor Que Não Vivi — Duo Intime — Canção Erudita Brasileira", "video-amor-que-nao-vivi.jpg"],
-  ["pai-nosso", "Nellva Sântana — Pai Nosso (Carlos Zink)", "video-pai-nosso.png"],
-  ["xote-das-meninas", "Mulheres que Cantam — Xote das Meninas — Luiz Gonzaga", "video-xote-das-meninas.jpg"],
-  ["uirapuru", "Uirapuru — Waldemar Henrique — Série Lendas Amazônicas", "video-uirapuru.jpg"],
-  ["canto-veronica", "Canto de Verônica — Paixão de Cristo", "video-canto-veronica.jpg"],
-] as const;
-
-const officialVideoUrls: Record<string, string> = {
-  "xote-das-meninas": "https://www.youtube.com/watch?v=_pU421Heq0U",
-  stizzoso: "https://www.youtube.com/watch?v=NGx3by6RBeA",
-  uirapuru: "https://www.youtube.com/shorts/vivcTedT9bE",
-  "an-die-musik": "https://www.youtube.com/watch?v=R8wflclz8dw",
-};
-
+// Client-approved sequence. Keep this editorial order; do not sort.
 export const videos: Video[] = [
-  { id: "bate-coracao", title: "Bate Coração — Nellva Sântana — Elba Ramalho", featured: true, priority: 1 },
-  ...videoData.map(([id, title, image]) => ({ id, title, youtubeUrl: officialVideoUrls[id], priority: id === "xote-das-meninas" ? 2 : 10, thumbnail: { src: `/images/${image}`, alt: `Miniatura de ${title}`, width: 1080, height: 1080 } })),
+  {
+    "id": "W6Y4hciGHX4",
+    "title": "Bate Coração - Nellva Sântana - Elba Ramalho",
+    "youtubeUrl": "https://youtu.be/W6Y4hciGHX4?si=7du28PuNlwg3DR3e",
+    "youtubeId": "W6Y4hciGHX4",
+    "format": "video",
+    "featured": true
+  },
+  {
+    "id": "_pU421Heq0U",
+    "title": "Mulheres Que Cantam- Xote das Meninas -Luiz Gonzaga",
+    "youtubeUrl": "https://www.youtube.com/watch?v=_pU421Heq0U",
+    "youtubeId": "_pU421Heq0U",
+    "format": "video"
+  },
+  {
+    "id": "NGx3by6RBeA",
+    "title": "Stizzoso, mio stizzoso (La Serva Padrona - G.B. Pergolesi)",
+    "youtubeUrl": "https://www.youtube.com/watch?v=NGx3by6RBeA",
+    "youtubeId": "NGx3by6RBeA",
+    "format": "video"
+  },
+  {
+    "id": "vivcTedT9bE",
+    "title": "Uirapuru - Waldemar Henrique- Série Lenda Amazônicas",
+    "youtubeUrl": "https://www.youtube.com/shorts/vivcTedT9bE",
+    "youtubeId": "vivcTedT9bE",
+    "format": "short"
+  },
+  {
+    "id": "R8wflclz8dw",
+    "title": "An die Musik (Franz Schubert)",
+    "youtubeUrl": "https://www.youtube.com/watch?v=R8wflclz8dw",
+    "youtubeId": "R8wflclz8dw",
+    "format": "video"
+  },
+  {
+    "id": "5mgejp1aJr4",
+    "title": "Ave Maria - Franz Schubert (64º Paixão de Cristo - Taboão da Serra)- \"Coração de Maria\"",
+    "youtubeUrl": "https://www.youtube.com/watch?v=5mgejp1aJr4",
+    "youtubeId": "5mgejp1aJr4",
+    "format": "video"
+  },
+  {
+    "id": "A2tG0UlGDE0",
+    "title": "\"Amor Que Não Vivi\"- \"Duo Intimè\"- Canção Brasileira",
+    "youtubeUrl": "https://www.youtube.com/watch?v=A2tG0UlGDE0&list=RDA2tG0UlGDE0&start_radio=1",
+    "youtubeId": "A2tG0UlGDE0",
+    "format": "video"
+  },
+  {
+    "id": "vuCxqNpE6_U",
+    "title": "Pai Nosso (Carlos Zink)",
+    "youtubeUrl": "https://www.youtube.com/watch?v=vuCxqNpE6_U",
+    "youtubeId": "vuCxqNpE6_U",
+    "format": "video"
+  },
+  {
+    "id": "P_sXU2_2IEI",
+    "title": "Canto de Verônica (Paixão de Cristo - Taboão da Serra)",
+    "youtubeUrl": "https://www.youtube.com/watch?v=P_sXU2_2IEI",
+    "youtubeId": "P_sXU2_2IEI",
+    "format": "video"
+  }
 ];
-
-export function orderedVideos(items: Video[]) {
-  return items.filter(video => video.youtubeUrl || video.thumbnail).sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)) || (a.priority ?? 99) - (b.priority ?? 99));
-}

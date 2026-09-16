@@ -436,3 +436,29 @@ section:focus{outline:none}
   .performances-chapter .performance-stack article:nth-child(even) figure { order: initial; }
   .performances-chapter .performance-stack article:nth-child(4) > div { display: block; }
 }
+
+/* Audiovisual: client-approved sequence with a larger opening work. */
+.video-rail article{flex-basis:min(560px,52vw)}
+.video-rail article.featured{flex-basis:min(760px,70vw)}
+.video-rail article.featured h3{font-size:clamp(1.65rem,2.4vw,2.4rem)}
+.video-rail h3{margin-bottom:1rem}
+.video-rail .text-link{display:inline-flex;align-items:center;min-height:44px}
+.video-open{position:absolute;inset:0;width:100%;border:0;background:transparent;cursor:pointer}
+.video-open:focus-visible{outline:3px solid var(--gold);outline-offset:-5px}
+.video-open .video-play{display:grid;place-items:center;pointer-events:none}
+.video-open:hover .video-play{background:var(--gold)}
+.video-dialog{position:fixed;inset:0;width:min(960px,calc(100vw - 2rem));max-width:none;max-height:calc(100dvh - 2rem);margin:auto;padding:1.25rem;border:1px solid #766457;background:#100a08;color:var(--paper);overflow-y:auto;overscroll-behavior:contain}
+.video-dialog::backdrop{background:#000d}
+.video-dialog-heading{display:flex;align-items:flex-start;gap:1rem;margin-bottom:1rem}
+.videos-chapter .video-dialog-heading h2{flex:1;margin:0;font-size:clamp(1.1rem,2vw,1.6rem);line-height:1.3}
+.video-close{flex:0 0 44px;width:44px;height:44px;border:1px solid #b7aaa3;border-radius:50%;color:inherit;background:transparent;cursor:pointer}
+.video-dialog iframe{display:block;width:100%;height:auto;aspect-ratio:16/9;max-height:65dvh;border:0;background:#000}
+.video-dialog-short{width:min(430px,calc(100vw - 2rem))}
+.video-dialog-short iframe{width:auto;max-width:100%;height:min(60dvh,640px);aspect-ratio:9/16;margin-inline:auto}
+.video-dialog>.text-link{margin-top:.75rem}
+@media(max-width:760px){
+  .videos-chapter h2{font-size:clamp(2.2rem,9vw,4rem);overflow-wrap:normal}
+  .video-rail article{flex-basis:82vw}
+  .video-rail article.featured{flex-basis:86vw}
+  .video-dialog{padding:.85rem}
+}
