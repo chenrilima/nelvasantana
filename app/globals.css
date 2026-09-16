@@ -370,3 +370,69 @@ section:focus{outline:none}
   }
   .one-hero .hero-origin { display: none; }
 }
+
+/* Performances: readable editorial hierarchy, scoped to this chapter. */
+.performances-chapter > .section-title {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  column-gap: 7vw;
+  row-gap: .75rem;
+  align-items: end;
+  margin-bottom: clamp(3rem, 5vw, 5rem);
+}
+.performances-chapter .eyebrow {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: .12em;
+  color: #7a5807;
+}
+.performances-chapter > .section-title > .eyebrow {
+  grid-column: 1 / -1;
+  margin: 0;
+}
+.performances-chapter > .section-title h2 {
+  margin: 0;
+  line-height: 1.08;
+  overflow-wrap: anywhere;
+}
+.performances-chapter > .section-title > p:last-child:not(.eyebrow) {
+  max-width: 42ch;
+  margin: 0;
+  font-size: clamp(1.125rem, 1rem + .3vw, 1.25rem);
+  font-weight: 500;
+  line-height: 1.65;
+  color: #574b46;
+}
+.performances-chapter .performance-stack article {
+  padding-block: clamp(3rem, 5vw, 5rem);
+}
+.performances-chapter .performance-stack article > div {
+  min-width: 0;
+}
+.performances-chapter .performance-stack article > div > .eyebrow {
+  margin: 0 0 1rem;
+  letter-spacing: .08em;
+}
+.performances-chapter .performance-stack h3 {
+  margin: 0 0 1.25rem;
+  font-weight: 600;
+  line-height: 1.12;
+  overflow-wrap: anywhere;
+}
+.performances-chapter .performance-stack article > div > p:last-child {
+  max-width: 55ch;
+  margin: 0;
+  font-size: clamp(1.125rem, 1rem + .2vw, 1.1875rem);
+  font-weight: 400;
+  line-height: 1.75;
+  color: #574b46;
+}
+@media (max-width: 900px) {
+  .performances-chapter > .section-title { grid-template-columns: minmax(0, 1fr); row-gap: 1rem; }
+  .performances-chapter .performance-stack article,
+  .performances-chapter .performance-stack article.text-only { grid-template-columns: minmax(0, 1fr); gap: 2rem; padding-left: 0; }
+  .performances-chapter .performance-stack article.text-only > div { grid-column: 1; }
+  .performances-chapter .performance-stack article:nth-child(even) figure { order: initial; }
+  .performances-chapter .performance-stack article:nth-child(4) > div { display: block; }
+}
