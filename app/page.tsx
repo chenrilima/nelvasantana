@@ -3,7 +3,7 @@ import { VideoCard } from "@/components/video-card";
 import { Booking } from "@/components/footer";
 import { ScrollRail } from "@/components/scroll-rail";
 import { SectionTitle } from "@/components/ui";
-import { biography, gallery, heroSocialLinks, identity, orderedVideos, performanceImages, performances, projects, videos } from "@/data/content";
+import { biography, gallery, heroSocialLinks, identity, identityStyles, orderedVideos, performanceImages, performances, projects, videos } from "@/data/content";
 
 export default function Home() {
   return <>
@@ -36,7 +36,16 @@ export default function Home() {
 
     <section className="identity-chapter anchor-section" id="identidade" tabIndex={-1}>
       <figure><Image src="/images/nellva-identidade.jpg" alt="Nellva Sântana sorrindo e aplaudindo diante do microfone" width={1357} height={2048} sizes="(max-width: 760px) 100vw, 42vw" /></figure>
-      <div><SectionTitle eyebrow="Identidade artística">Sons da Diversidade<br /><em>Cultural Brasileira</em></SectionTitle>{identity.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}<div className="influence-line" aria-label="Vertentes musicais"><span>MPB</span><span>Baião</span><span>Xote</span><span>Bossa Nova</span><span>Canto erudito</span></div></div>
+      <div><SectionTitle eyebrow="Essência">Sons da Diversidade<br /><em>Cultural Brasileira</em></SectionTitle>{identity.map((paragraph) => <p key={paragraph}>{paragraph}</p>)}</div>
+      <ul className="identity-styles" aria-label="Vertentes musicais">
+        {identityStyles.map(({ symbol, name, description }) => (
+          <li key={name} className="identity-style">
+            <span className="identity-style-symbol" aria-hidden="true">{symbol}</span>
+            <h3>{name}</h3>
+            <p>{description}</p>
+          </li>
+        ))}
+      </ul>
     </section>
 
     <section className="performances-chapter anchor-section" id="performances" tabIndex={-1}>

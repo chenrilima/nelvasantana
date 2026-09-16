@@ -17,6 +17,15 @@ export const identity = [
   "Nellva Sântana destaca-se pela qualidade vocal, presença artística e interpretação carregada de verdade, um tributo vivo às suas raízes nordestinas e à riqueza da musicalidade brasileira. Cada canção que interpreta carrega memória, identidade e um compromisso genuíno com a preservação e valorização da cultura do seu povo.",
 ];
 
+// Texts and markers restored verbatim from app/artista/page.tsx at 1419b4b.
+export const identityStyles = [
+  { symbol: "01", name: "MPB", description: "Canção Erudita Brasileira e MPB clássica." },
+  { symbol: "02", name: "Baião", description: "A força rítmica e o balanço do sertão baiano." },
+  { symbol: "03", name: "Xote", description: "Melodia, sentimento e memória." },
+  { symbol: "04", name: "Bossa Nova", description: "Suavidade e balanço integrados à voz nordestina." },
+  { symbol: "05", name: "Canto erudito", description: "Árias de Ópera, Lied e Canto Coral Sacro." },
+] as const;
+
 export const performances = [
   { title: "66ª Paixão de Cristo", place: "Taboão da Serra", year: "2025", text: "Na Encenação da Paixão de Cristo, deu vida ao emblemático personagem Sentimento de Maria, emocionando o público com intensa presença cênica e interpretação de Ave Maria, de Franz Schubert — um marco de sua trajetória artística, onde voz, emoção e teatro se encontram." },
   { title: "64ª Paixão de Cristo", place: "Taboão da Serra", year: "2023", text: "Na 64ª edição do espetáculo 'Encenação da Paixão de Cristo', deu vida à marcante personagem Verônica, atuando como atriz e solista na interpretação do tradicional Canto de Verônica, em uma performance que uniu expressividade cênica e excelência vocal." },
