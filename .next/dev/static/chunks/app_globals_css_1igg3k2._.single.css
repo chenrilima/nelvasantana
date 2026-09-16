@@ -2770,4 +2770,145 @@ section:focus {
   }
 }
 
+.one-hero {
+  --hero-background: #08070b;
+  height: min(960px, 100svh);
+  min-height: 780px;
+  padding: var(--header) max(6vw, calc((100vw - 1440px) / 2)) 0;
+  isolation: isolate;
+  background: var(--hero-background);
+  align-items: center;
+  display: flex;
+}
+
+.one-hero-copy {
+  width: 46%;
+  padding: 0;
+  position: relative;
+  inset: auto;
+}
+
+.one-hero-copy h1 {
+  font: 400 clamp(5rem, 8vw, 8.5rem)/.94 var(--font-serif), Georgia, serif;
+  letter-spacing: -.035em;
+  margin: .12em 0 .25em;
+}
+
+.hero-first-name, .hero-surname {
+  white-space: nowrap;
+  display: block;
+}
+
+.hero-initial {
+  font-family: var(--font-script), cursive;
+  margin-right: -.035em;
+}
+
+.hero-surname {
+  color: #d0a22b;
+  margin-left: .18em;
+}
+
+.one-hero .hero-line {
+  color: var(--paper);
+  margin: 1.5rem 0 2rem;
+  display: block;
+}
+
+.one-hero-photo {
+  z-index: -1;
+  aspect-ratio: auto;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+}
+
+.one-hero-photo img {
+  object-fit: contain;
+  object-position: center;
+  max-width: none;
+  -webkit-mask-image: linear-gradient(90deg, #0000, #000 12% 88%, #0000);
+  mask-image: linear-gradient(90deg, #0000, #000 12% 88%, #0000);
+  width: min(70vw, 900px) !important;
+  height: auto !important;
+  top: -9% !important;
+  left: auto !important;
+  right: max(0px, 50vw - 800px) !important;
+}
+
+.one-hero-photo:after {
+  content: "";
+  background: linear-gradient(90deg, var(--hero-background) 14%, transparent 57%),
+    linear-gradient(0deg, var(--hero-background), transparent 19%);
+  display: block;
+  position: absolute;
+  inset: 0;
+}
+
+.one-hero .hero-origin {
+  right: max(2vw, 50vw - 720px);
+}
+
+@media (max-width: 900px) {
+  .one-hero {
+    height: auto;
+    min-height: 0;
+    padding: calc(var(--header) + 2rem) 6vw 0;
+    display: block;
+  }
+
+  .one-hero-copy {
+    width: 100%;
+    padding: 0 0 3rem;
+  }
+
+  .one-hero-copy .eyebrow {
+    letter-spacing: .13em;
+    margin-bottom: 1.5rem;
+    font-size: .63rem;
+  }
+
+  .one-hero-copy h1 {
+    margin: 0 0 .2em;
+    font-size: clamp(4.4rem, 12vw, 6rem);
+  }
+
+  .one-hero .hero-line {
+    margin: 1rem 0;
+    font-size: 1.35rem;
+  }
+
+  .one-hero .hero-cue {
+    margin: 0;
+  }
+
+  .one-hero-photo {
+    aspect-ratio: 1357 / 1750;
+    width: 100vw;
+    height: auto;
+    margin: -5rem -6vw 0;
+    position: relative;
+  }
+
+  .one-hero-photo img {
+    -webkit-mask-image: none;
+    mask-image: none;
+    width: 100% !important;
+    top: -17% !important;
+    right: 0 !important;
+  }
+
+  .one-hero-photo:after {
+    background: linear-gradient(180deg, var(--hero-background), transparent 20%),
+      linear-gradient(0deg, var(--hero-background), transparent 16%);
+  }
+
+  .one-hero .hero-origin {
+    display: none;
+  }
+}
+
 /*# sourceMappingURL=app_globals_css_1igg3k2._.single.css.map*/

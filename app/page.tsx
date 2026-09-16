@@ -10,11 +10,11 @@ export default function Home() {
     <section className="one-hero" id="inicio" tabIndex={-1}>
       <div className="one-hero-copy">
         <p className="eyebrow">Cantora · intérprete · artista brasileira</p>
-        <h1>Nellva <em>Sântana</em></h1>
-        <p className="hero-line">Raízes profundas.<br />A mesma essência em cada canção.</p>
+        <h1 aria-label="Nellva Sântana"><span className="hero-first-name"><span className="hero-initial">N</span>ellva</span>{" "}<span className="hero-surname">Sântana</span></h1>
+        <p className="hero-line">Minha voz, meu canto...</p>
         <a className="hero-cue" href="#artista">A artista <span aria-hidden="true">↓</span></a>
       </div>
-      <figure className="one-hero-photo"><Image src="/images/nellva-hero.jpg" alt="Nellva Sântana cantando ao microfone, de vestido floral" fill preload sizes="(max-width: 760px) 100vw, 48vw" /></figure>
+      <figure className="one-hero-photo"><Image src="/images/nellva-hero.jpg" alt="Nellva Sântana cantando ao microfone, de vestido floral" fill loading="eager" sizes="(max-width: 900px) 100vw, 900px" /></figure>
       <p className="hero-origin">Nordeste, Brasil</p>
     </section>
 

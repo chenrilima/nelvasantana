@@ -278,3 +278,76 @@ section:focus{outline:none}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}}
 @media(min-width:761px){.one-hero-copy .eyebrow{margin-bottom:3rem}}
+
+/* Hero: one photographic composition, with the original script initial. */
+.one-hero {
+  --hero-background: #08070b;
+  min-height: 780px;
+  height: min(960px, 100svh);
+  display: flex;
+  align-items: center;
+  padding: var(--header) max(6vw, calc((100vw - 1440px) / 2)) 0;
+  isolation: isolate;
+  background: var(--hero-background);
+}
+.one-hero-copy { position: relative; inset: auto; padding: 0; width: 46%; }
+.one-hero-copy h1 {
+  margin: .12em 0 .25em;
+  font: 400 clamp(5rem, 8vw, 8.5rem)/.94 var(--font-serif), Georgia, serif;
+  letter-spacing: -.035em;
+}
+.hero-first-name, .hero-surname { display: block; white-space: nowrap; }
+.hero-initial { font-family: var(--font-script), cursive; margin-right: -.035em; }
+.hero-surname { margin-left: .18em; color: #d0a22b; }
+.one-hero .hero-line { display: block; margin: 1.5rem 0 2rem; color: var(--paper); }
+.one-hero-photo {
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  aspect-ratio: auto;
+  overflow: hidden;
+}
+/* The portrait keeps its ratio; only empty space above the hair is cropped. */
+.one-hero-photo img {
+  object-fit: contain;
+  object-position: center;
+  mask-image: linear-gradient(90deg, transparent, #000 12%, #000 88%, transparent);
+  width: min(70vw, 900px) !important;
+  height: auto !important;
+  max-width: none;
+  left: auto !important;
+  right: max(0px, calc((100vw - 1600px) / 2)) !important;
+  top: -9% !important;
+}
+.one-hero-photo:after {
+  display: block;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(90deg, var(--hero-background) 14%, transparent 57%),
+    linear-gradient(0deg, var(--hero-background), transparent 19%);
+}
+.one-hero .hero-origin { right: max(2vw, calc((100vw - 1440px) / 2)); }
+@media (max-width: 900px) {
+  .one-hero {
+    height: auto;
+    min-height: 0;
+    padding: calc(var(--header) + 2rem) 6vw 0;
+    display: block;
+  }
+  .one-hero-copy { width: 100%; padding: 0 0 3rem; }
+  .one-hero-copy .eyebrow { font-size: .63rem; letter-spacing: .13em; margin-bottom: 1.5rem; }
+  .one-hero-copy h1 { font-size: clamp(4.4rem, 12vw, 6rem); margin: 0 0 .2em; }
+  .one-hero .hero-line { font-size: 1.35rem; margin: 1rem 0; }
+  .one-hero .hero-cue { margin: 0; }
+  .one-hero-photo { position: relative; width: 100vw; height: auto; margin: -5rem -6vw 0; aspect-ratio: 1357 / 1750; }
+  .one-hero-photo img { mask-image: none; width: 100% !important; right: 0 !important; top: -17% !important; }
+  .one-hero-photo:after {
+    background: linear-gradient(180deg, var(--hero-background), transparent 20%),
+      linear-gradient(0deg, var(--hero-background), transparent 16%);
+  }
+  .one-hero .hero-origin { display: none; }
+}
