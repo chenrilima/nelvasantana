@@ -1,9 +1,11 @@
 import Image from "next/image";
+import type { CSSProperties } from "react";
 import { VideoCard } from "@/components/video-card";
 import { Booking } from "@/components/footer";
 import { ScrollRail } from "@/components/scroll-rail";
 import { SectionTitle } from "@/components/ui";
-import { biography, gallery, heroSocialLinks, identity, identityStyles, performanceImages, performances, projects, videos } from "@/data/content";
+import { biography, heroSocialLinks, identity, identityStyles, performanceImages, performances, projects, videos } from "@/data/content";
+import { galleryGroups } from "@/data/gallery";
 
 export default function Home() {
   return <>
@@ -93,8 +95,19 @@ export default function Home() {
     </section>
 
     <section className="gallery-chapter anchor-section" id="galeria" tabIndex={-1}>
-      <div className="chapter-heading"><SectionTitle eyebrow="Galeria">Presença, música <em>e expressão.</em></SectionTitle><p>Imagens que revelam diferentes dimensões da presença artística de Nellva Sântana.</p></div>
-      <ScrollRail label="Galeria de fotografias" className="gallery-rail">{gallery.map((image) => <figure className={image.width > image.height ? "landscape" : "portrait"} key={image.src}><Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes="(max-width: 760px) 82vw, 55vw" /><figcaption>{image.caption}</figcaption></figure>)}</ScrollRail>
+      <div className="chapter-heading gallery-opening"><SectionTitle eyebrow="MOMENTOS">Galeria</SectionTitle><p>Imagens que revelam diferentes dimensões da presença artística de Nellva Sântana.</p></div>
+      <div className="chapter-heading"><SectionTitle eyebrow="Galeria">Presença, música <em>e expressão.</em></SectionTitle></div>
+      {galleryGroups.map((group, index) => <section className="gallery-group" aria-labelledby={`gallery-${group.id}`} key={group.id}>
+        <header className="gallery-group-heading"><span aria-hidden="true">0{index + 1}</span><h3 id={`gallery-${group.id}`}>{group.title}</h3></header>
+        <ScrollRail label={`Galeria — ${group.title}`} className="gallery-rail gallery-curated">
+          {group.images.map(image => {
+            const ratio = image.width / image.height;
+            return <figure key={image.src} style={{ "--photo-ratio": ratio } as CSSProperties}>
+              <Image src={image.src} alt={image.alt} width={image.width} height={image.height} sizes={`(max-width: 760px) min(${Math.ceil(440 * ratio)}px, 84vw), min(${Math.ceil(480 * ratio)}px, 78vw)`} loading="lazy" />
+            </figure>;
+          })}
+        </ScrollRail>
+      </section>)}
     </section>
 
     <section className="agenda-chapter anchor-section" id="agenda" tabIndex={-1}><p className="eyebrow">Agenda</p><h2>Novas apresentações<br /><em>serão anunciadas em breve.</em></h2></section>

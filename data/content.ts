@@ -53,16 +53,6 @@ export const performanceImages: MediaAsset[] = [
   { src: "/images/danca-de-oz.png", alt: "Nellva cantando em cena ao lado de uma bailarina em A Dança de OZ", width: 2000, height: 2000 },
 ];
 
-export const gallery: (MediaAsset & { caption: string })[] = [
-  { src: "/images/nellva-palco.jpg", alt: "Nellva canta com os braços abertos sob a iluminação do palco", width: 3888, height: 2592, caption: "A voz e o gesto" },
-  { src: "/images/nellva-contrabaixo.jpg", alt: "Nellva ao microfone, acompanhada por contrabaixista", width: 2592, height: 3888, caption: "Encontros musicais" },
-  { src: "/images/nellva-banda.jpg", alt: "Nellva acompanhada por contrabaixo, percussão e violão", width: 1280, height: 682, caption: "Música em conjunto" },
-  { src: "/images/nellva-cancao.jpg", alt: "Nellva de vestido terracota, cantando ao microfone", width: 2592, height: 3888, caption: "Presença em cena" },
-  { src: "/images/nellva-expressao.jpg", alt: "Nellva canta com o braço estendido, acompanhada por músicos", width: 3888, height: 2592, caption: "Expressão e brasilidade" },
-  { src: "/images/paixao-2025-retrato.png", alt: "Nellva em cena com manto azul e jarro nas mãos", width: 1080, height: 1350, caption: "66ª Paixão de Cristo · 2025" },
-  { src: "/images/paixao-2023-cena.png", alt: "Cena da Paixão de Cristo com três intérpretes no palco", width: 1080, height: 1350, caption: "64ª Paixão de Cristo · 2023" },
-];
-
 // Client-approved sequence. Keep this editorial order; do not sort.
 export const videos: Video[] = [
   {
