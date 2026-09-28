@@ -487,6 +487,6 @@ section:focus{outline:none}
   .gallery-chapter .chapter-heading h2{font-size:clamp(2.5rem,10vw,4rem)}
   .gallery-group-heading{margin-right:1rem}
   .gallery-curated .rail-controls{padding-right:1rem}
-  .gallery-curated .scroll-rail{padding-right:1rem}
+  .gallery-curated .scroll-rail{padding-right:1rem;align-items:flex-start}
   .gallery-curated figure{width:min(calc(440px * var(--photo-ratio)),84vw)}
 }
