@@ -1,3 +1,9 @@
+export const heroSocialLinks = [
+  { id: "instagram", name: "Instagram", href: "https://www.instagram.com/nellvasantanacantora/" },
+  { id: "youtube", name: "YouTube", href: "https://www.youtube.com/@nellvasantanacantora" },
+  { id: "facebook", name: "Facebook", href: "https://www.facebook.com/share/1JkPq99AjH/" },
+] as const;
+
 export const biography = [
   "Nascida e criada no interior da Bahia, Nellva Sântana traz em sua essência as cores, os ritmos e as narrativas que moldam a identidade cultural do Nordeste brasileiro. Cresceu imersa em manifestações populares como as Festas Juninas, a Folia de Reis, o Bumba Meu Boi e o Carnaval, vivências que despertaram, desde cedo, sua relação profunda com a música e permanecem como alicerce de sua identidade artística.",
   "Ao longo da sua formação, ampliou esse universo ao dedicar-se também ao estudo da canção brasileira, da música de concerto e de diferentes repertórios vocais, construindo uma trajetória marcada pelo diálogo entre tradição e técnica, memória e interpretação.",
@@ -11,6 +17,15 @@ export const identity = [
   "Nellva Sântana destaca-se pela qualidade vocal, presença artística e interpretação carregada de verdade, um tributo vivo às suas raízes nordestinas e à riqueza da musicalidade brasileira. Cada canção que interpreta carrega memória, identidade e um compromisso genuíno com a preservação e valorização da cultura do seu povo.",
 ];
 
+// Texts and markers restored verbatim from app/artista/page.tsx at 1419b4b.
+export const identityStyles = [
+  { symbol: "01", name: "MPB", description: "Canção Erudita Brasileira e MPB clássica." },
+  { symbol: "02", name: "Baião", description: "A força rítmica e o balanço do sertão baiano." },
+  { symbol: "03", name: "Xote", description: "Melodia, sentimento e memória." },
+  { symbol: "04", name: "Bossa Nova", description: "Suavidade e balanço integrados à voz nordestina." },
+  { symbol: "05", name: "Canto erudito", description: "Árias de Ópera, Lied e Canto Coral Sacro." },
+] as const;
+
 export const performances = [
   { title: "66ª Paixão de Cristo", place: "Taboão da Serra", year: "2025", text: "Na Encenação da Paixão de Cristo, deu vida ao emblemático personagem Sentimento de Maria, emocionando o público com intensa presença cênica e interpretação de Ave Maria, de Franz Schubert — um marco de sua trajetória artística, onde voz, emoção e teatro se encontram." },
   { title: "64ª Paixão de Cristo", place: "Taboão da Serra", year: "2023", text: "Na 64ª edição do espetáculo 'Encenação da Paixão de Cristo', deu vida à marcante personagem Verônica, atuando como atriz e solista na interpretação do tradicional Canto de Verônica, em uma performance que uniu expressividade cênica e excelência vocal." },
@@ -21,12 +36,13 @@ export const performances = [
 ];
 
 export const projects = [
-  { title: "Noutra Bossa", summary: "Músicas autorais e releituras em parceria, disponíveis no Spotify e YouTube.", text: "Entre a criação e a reinvenção, o Noutra Bossa apresenta um repertório de músicas autorais e releituras em parceria, revelando uma identidade musical singular. Disponível no Spotify e no YouTube, o projeto amplia o diálogo entre tradição, sensibilidade e contemporaneidade." },
-  { title: "Canção Erudita Brasileira", summary: "Concerto de Música de Câmara dedicado à Canção Erudita Brasileira.", text: "Concerto de Música de Câmara dedicado à Canção Erudita Brasileira, apresentando obras autorais em parceria com compositores. O repertório valoriza a criação contemporânea e a identidade musical brasileira." },
+  { title: "Noutra Bossa", image: "/images/projeto-noutra-bossa.jpg", imageAlt: "Capa do projeto Noutra Bossa", youtube: "https://www.youtube.com/watch?v=jr-tpTtKdFI&list=RDjr-tpTtKdFI&start_radio=1", instagram: "https://www.instagram.com/noutrabossa?igsh=MTNkb2c0YTdhZndqNQ%3D%3D", summary: "Músicas autorais e releituras em parceria, disponíveis no Spotify e YouTube.", text: "Entre a criação e a reinvenção, o Noutra Bossa apresenta um repertório de músicas autorais e releituras em parceria, revelando uma identidade musical singular. Disponível no Spotify e no YouTube, o projeto amplia o diálogo entre tradição, sensibilidade e contemporaneidade." },
+  // The existing cover identifies Duo Intimè; the approved copy below describes its repertoire.
+  { title: "Duo Intimè", image: "/images/projeto-cancao-erudita.jpg", imageAlt: "Logotipo do Duo Intimè com violão", youtube: "https://www.youtube.com/watch?v=A2tG0UlGDE0&list=RDA2tG0UlGDE0&start_radio=1", instagram: "https://www.instagram.com/duo.intime?igsh=MXhxcndnNGJ6OTVocg%3D%3D", summary: "Concerto de Música de Câmara dedicado à Canção Erudita Brasileira.", text: "Concerto de Música de Câmara dedicado à Canção Erudita Brasileira, apresentando obras autorais em parceria com compositores. O repertório valoriza a criação contemporânea e a identidade musical brasileira." },
 ];
 
 export type MediaAsset = { src: string; alt: string; width: number; height: number };
-export type Video = { id: string; title: string; thumbnail?: MediaAsset; youtubeUrl?: string; featured?: boolean; priority?: number };
+export type Video = { id: string; title: string; youtubeUrl: string; youtubeId: string; format: "video" | "short"; featured?: boolean };
 
 export const performanceImages: MediaAsset[] = [
   { src: "/images/paixao-2025.png", alt: "Nellva como Sentimento de Maria, junto ao intérprete de Jesus", width: 1080, height: 1350 },
@@ -37,39 +53,70 @@ export const performanceImages: MediaAsset[] = [
   { src: "/images/danca-de-oz.png", alt: "Nellva cantando em cena ao lado de uma bailarina em A Dança de OZ", width: 2000, height: 2000 },
 ];
 
-export const gallery: (MediaAsset & { caption: string })[] = [
-  { src: "/images/nellva-palco.jpg", alt: "Nellva canta com os braços abertos sob a iluminação do palco", width: 3888, height: 2592, caption: "A voz e o gesto" },
-  { src: "/images/nellva-contrabaixo.jpg", alt: "Nellva ao microfone, acompanhada por contrabaixista", width: 2592, height: 3888, caption: "Encontros musicais" },
-  { src: "/images/nellva-banda.jpg", alt: "Nellva acompanhada por contrabaixo, percussão e violão", width: 1280, height: 682, caption: "Música em conjunto" },
-  { src: "/images/nellva-cancao.jpg", alt: "Nellva de vestido terracota, cantando ao microfone", width: 2592, height: 3888, caption: "Presença em cena" },
-  { src: "/images/nellva-expressao.jpg", alt: "Nellva canta com o braço estendido, acompanhada por músicos", width: 3888, height: 2592, caption: "Expressão e brasilidade" },
-  { src: "/images/paixao-2025-retrato.png", alt: "Nellva em cena com manto azul e jarro nas mãos", width: 1080, height: 1350, caption: "66ª Paixão de Cristo · 2025" },
-  { src: "/images/paixao-2023-cena.png", alt: "Cena da Paixão de Cristo com três intérpretes no palco", width: 1080, height: 1350, caption: "64ª Paixão de Cristo · 2023" },
-];
-
-const videoData = [
-  ["stizzoso", "Nellva Sântana — Stizzoso, mio stizzoso (La Serva Padrona — G. B. Pergolesi)", "video-stizzoso.jpg"],
-  ["an-die-musik", "Soprano Nellva Sântana — An die Musik (Franz Schubert)", "video-an-die-musik.jpg"],
-  ["ave-maria", "Ave Maria — Franz Schubert (64ª Paixão de Cristo — Taboão da Serra)", "video-ave-maria.jpg"],
-  ["amor-que-nao-vivi", "Amor Que Não Vivi — Duo Intime — Canção Erudita Brasileira", "video-amor-que-nao-vivi.jpg"],
-  ["pai-nosso", "Nellva Sântana — Pai Nosso (Carlos Zink)", "video-pai-nosso.png"],
-  ["xote-das-meninas", "Mulheres que Cantam — Xote das Meninas — Luiz Gonzaga", "video-xote-das-meninas.jpg"],
-  ["uirapuru", "Uirapuru — Waldemar Henrique — Série Lendas Amazônicas", "video-uirapuru.jpg"],
-  ["canto-veronica", "Canto de Verônica — Paixão de Cristo", "video-canto-veronica.jpg"],
-] as const;
-
-const officialVideoUrls: Record<string, string> = {
-  "xote-das-meninas": "https://www.youtube.com/watch?v=_pU421Heq0U",
-  stizzoso: "https://www.youtube.com/watch?v=NGx3by6RBeA",
-  uirapuru: "https://www.youtube.com/shorts/vivcTedT9bE",
-  "an-die-musik": "https://www.youtube.com/watch?v=R8wflclz8dw",
-};
-
+// Client-approved sequence. Keep this editorial order; do not sort.
 export const videos: Video[] = [
-  { id: "bate-coracao", title: "Bate Coração — Nellva Sântana — Elba Ramalho", featured: true, priority: 1 },
-  ...videoData.map(([id, title, image]) => ({ id, title, youtubeUrl: officialVideoUrls[id], priority: id === "xote-das-meninas" ? 2 : 10, thumbnail: { src: `/images/${image}`, alt: `Miniatura de ${title}`, width: 1080, height: 1080 } })),
+  {
+    "id": "W6Y4hciGHX4",
+    "title": "Bate Coração - Nellva Sântana - Elba Ramalho",
+    "youtubeUrl": "https://youtu.be/W6Y4hciGHX4?si=7du28PuNlwg3DR3e",
+    "youtubeId": "W6Y4hciGHX4",
+    "format": "video",
+    "featured": true
+  },
+  {
+    "id": "_pU421Heq0U",
+    "title": "Mulheres Que Cantam- Xote das Meninas -Luiz Gonzaga",
+    "youtubeUrl": "https://www.youtube.com/watch?v=_pU421Heq0U",
+    "youtubeId": "_pU421Heq0U",
+    "format": "video"
+  },
+  {
+    "id": "NGx3by6RBeA",
+    "title": "Stizzoso, mio stizzoso (La Serva Padrona - G.B. Pergolesi)",
+    "youtubeUrl": "https://www.youtube.com/watch?v=NGx3by6RBeA",
+    "youtubeId": "NGx3by6RBeA",
+    "format": "video"
+  },
+  {
+    "id": "vivcTedT9bE",
+    "title": "Uirapuru - Waldemar Henrique- Série Lenda Amazônicas",
+    "youtubeUrl": "https://www.youtube.com/shorts/vivcTedT9bE",
+    "youtubeId": "vivcTedT9bE",
+    "format": "short"
+  },
+  {
+    "id": "R8wflclz8dw",
+    "title": "An die Musik (Franz Schubert)",
+    "youtubeUrl": "https://www.youtube.com/watch?v=R8wflclz8dw",
+    "youtubeId": "R8wflclz8dw",
+    "format": "video"
+  },
+  {
+    "id": "5mgejp1aJr4",
+    "title": "Ave Maria - Franz Schubert (64º Paixão de Cristo - Taboão da Serra)- \"Coração de Maria\"",
+    "youtubeUrl": "https://www.youtube.com/watch?v=5mgejp1aJr4",
+    "youtubeId": "5mgejp1aJr4",
+    "format": "video"
+  },
+  {
+    "id": "A2tG0UlGDE0",
+    "title": "\"Amor Que Não Vivi\"- \"Duo Intimè\"- Canção Brasileira",
+    "youtubeUrl": "https://www.youtube.com/watch?v=A2tG0UlGDE0&list=RDA2tG0UlGDE0&start_radio=1",
+    "youtubeId": "A2tG0UlGDE0",
+    "format": "video"
+  },
+  {
+    "id": "vuCxqNpE6_U",
+    "title": "Pai Nosso (Carlos Zink)",
+    "youtubeUrl": "https://www.youtube.com/watch?v=vuCxqNpE6_U",
+    "youtubeId": "vuCxqNpE6_U",
+    "format": "video"
+  },
+  {
+    "id": "P_sXU2_2IEI",
+    "title": "Canto de Verônica (Paixão de Cristo - Taboão da Serra)",
+    "youtubeUrl": "https://www.youtube.com/watch?v=P_sXU2_2IEI",
+    "youtubeId": "P_sXU2_2IEI",
+    "format": "video"
+  }
 ];
-
-export function orderedVideos(items: Video[]) {
-  return items.filter(video => video.youtubeUrl || video.thumbnail).sort((a, b) => Number(Boolean(b.featured)) - Number(Boolean(a.featured)) || (a.priority ?? 99) - (b.priority ?? 99));
-}

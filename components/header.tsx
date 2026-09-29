@@ -4,9 +4,9 @@ import Link from "next/link";
 import { useEffect, useRef, useState } from "react";
 
 const links = [
-  ["#artista", "A artista"], ["#identidade", "Identidade"], ["#performances", "Performances"],
-  ["#projetos", "Projetos"], ["#videos", "Vídeos"], ["#musica", "Música"],
-  ["#galeria", "Galeria"], ["#agenda", "Agenda"], ["#imprensa", "Imprensa"], ["#contato", "Contato"],
+  ["#artista", "A Artista"], ["#identidade", "Identidade"], ["#performances", "Performances"],
+  ["#videos", "Vídeos"], ["#projetos", "Projetos"], ["#galeria", "Galeria"],
+  ["#agenda", "Agenda"], ["#musica", "Músicas"], ["#imprensa", "Imprensa"], ["#contato", "Contato"],
 ] as const;
 
 export function Header() {
@@ -41,7 +41,7 @@ export function Header() {
     <header className="site-header">
       <Link className="brand" href="#inicio" aria-label="Nellva Sântana — início"><span>Nellva</span> <em>Sântana</em></Link>
       <nav className="desktop-nav" aria-label="Navegação principal">
-        {links.slice(0, 6).map(([href, label]) => <Link key={href} href={href}>{label}</Link>)}
+        {links.map(([href, label]) => <Link key={href} href={href}>{label}</Link>)}
       </nav>
       <button ref={triggerRef} className="menu-trigger" type="button" aria-label="Abrir menu" aria-expanded={open} aria-controls="site-menu" onClick={() => setOpen(true)}><span /><span /><span /></button>
     </header>
@@ -51,7 +51,7 @@ export function Header() {
         <button ref={closeRef} className="menu-close" type="button" aria-label="Fechar menu" onClick={close}>×</button>
         <p className="eyebrow">Navegação</p>
         <nav aria-label="Menu completo">{links.map(([href, label]) => <Link key={href} href={href} onClick={() => navigate(href)}>{label}</Link>)}</nav>
-        <a className="menu-email" href="mailto:contato@nellvasantana.com">contato@nellvasantana.com</a>
+        <a className="menu-email" href="mailto:nellvasantanacontato@gmail.com">nellvasantanacontato@gmail.com</a>
       </div>
     </div>
   </>;
