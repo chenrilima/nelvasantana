@@ -1,5 +1,6 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
+import { Press } from "@/components/press";
 import { VideoCard } from "@/components/video-card";
 import { Booking } from "@/components/footer";
 import { ScrollRail } from "@/components/scroll-rail";
@@ -58,6 +59,11 @@ export default function Home() {
       })}</div>
     </section>
 
+    <section className="videos-chapter anchor-section" id="videos" tabIndex={-1}>
+      <div className="chapter-heading"><SectionTitle eyebrow="AUDIOVISUAL">Vídeos &amp; <em>Performances</em></SectionTitle></div>
+      <ScrollRail label="Vídeos & Performances de Nellva Sântana" className="video-rail">{videos.map(video => <VideoCard key={video.id} video={video} />)}</ScrollRail>
+    </section>
+
     <section className="projects-chapter anchor-section" id="projetos" tabIndex={-1}>
       <header className="section-title"><h2>Parcerias <em>Musicais</em></h2></header>
       <div className="one-projects">{projects.map((project) => (
@@ -85,15 +91,6 @@ export default function Home() {
       ))}</div>
     </section>
 
-    <section className="videos-chapter anchor-section" id="videos" tabIndex={-1}>
-      <div className="chapter-heading"><SectionTitle eyebrow="AUDIOVISUAL">Vídeos &amp; <em>Performances</em></SectionTitle></div>
-      <ScrollRail label="Vídeos & Performances de Nellva Sântana" className="video-rail">{videos.map(video => <VideoCard key={video.id} video={video} />)}</ScrollRail>
-    </section>
-
-    <section className="music-chapter anchor-section" id="musica" tabIndex={-1}>
-      <p className="eyebrow">Música</p><h2>Sua música em<br /><em>todas as plataformas.</em></h2><p>Da canção brasileira ao repertório de concerto, descubra diferentes encontros com a voz de Nellva.</p><a className="text-link" href="#videos">Ouça nas apresentações <span>↑</span></a>
-    </section>
-
     <section className="gallery-chapter anchor-section" id="galeria" tabIndex={-1}>
       <div className="chapter-heading gallery-opening"><SectionTitle eyebrow="MOMENTOS">Galeria</SectionTitle><p>Imagens que revelam diferentes dimensões da presença artística de Nellva Sântana.</p></div>
       <div className="chapter-heading"><SectionTitle eyebrow="Galeria">Presença, música <em>e expressão.</em></SectionTitle></div>
@@ -112,10 +109,11 @@ export default function Home() {
 
     <section className="agenda-chapter anchor-section" id="agenda" tabIndex={-1}><p className="eyebrow">Agenda</p><h2>Novas apresentações<br /><em>serão anunciadas em breve.</em></h2></section>
 
-    <section className="press-chapter anchor-section" id="imprensa" tabIndex={-1}>
-      <div><p className="eyebrow">Imprensa & materiais profissionais</p><h2>Informação clara.<br /><em>Identidade preservada.</em></h2></div>
-      <div><p>Para jornalistas, produtores e curadores: entre em contato para solicitar release, fotografias de divulgação e informações sobre os projetos.</p><a className="text-link" href="mailto:contato@nellvasantana.com?subject=Solicitação%20de%20material%20de%20imprensa">Solicitar materiais <span>↗</span></a></div>
+    <section className="music-chapter anchor-section" id="musica" tabIndex={-1}>
+      <p className="eyebrow">Música</p><h2>Sua música em<br /><em>todas as plataformas.</em></h2><p>Da canção brasileira ao repertório de concerto, descubra diferentes encontros com a voz de Nellva.</p><a className="text-link" href="#videos">Ouça nas apresentações <span>↑</span></a>
     </section>
+
+    <Press />
     <Booking />
   </>;
 }

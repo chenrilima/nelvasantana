@@ -62,3 +62,20 @@ Ordem no site: 10, 09, 02, 04, 03, 05, 01.
 | FOTO 09.jpg | 2048 × 1365 | Selecionada; composição integral. |
 | FOTO 10.jpg | 1442 × 2048 | Selecionada; composição integral. |
 | FOTO 11.jpg | 1080 × 1080 | Menor definição e sombras extensas; priorizados retratos com mais detalhe. |
+
+## Implementação e validação
+
+- Abertura MOMENTOS / Galeria incluída conforme briefing, pois estava ausente nesta versão do código. Texto introdutório e composição tipográfica de “Presença, música e expressão.” mantidos, sem duplicar o parágrafo.
+- Três blocos editoriais numerados, separados por respiro e linhas discretas. Cada bloco reaproveita ScrollRail com identificação própria. Nenhum componente compartilhado alterado.
+- Desktop: larguras proporcionais aos originais, altura máxima de 480 px e alinhamento central; fotografias horizontais e verticais convivem sem recorte.
+- Mobile: fotos limitadas a 84vw e 440 px de altura, alinhadas no topo; próxima foto parcialmente visível, rolagem nativa por toque e controles de 48 × 48 px.
+- Nenhuma legenda inventada; alt individual descreve apenas conteúdo visível. Sem categoria não confirmada ou imagem duplicada.
+- Typecheck, lint, build e git diff --check: aprovados. Build exibe aviso preexistente de metadataBase ausente, fora do escopo desta etapa.
+- Chromium com build de produção: 375, 390, 430, 768, 1024, 1440 e 1920 px aprovados. Mobile repetido após ajuste de alinhamento. Sem overflow da página e sem erros de console.
+- Verificadas todas as 23 imagens carregadas, proporções renderizadas, alt, lazy loading, ausência de duplicidades e nomes das categorias.
+- Testados em todos os tamanhos: setas esquerda/direita, Home/End, Tab, Enter e botões. Gesto de deslizar testado por simulação touch em 375 px; não houve teste em aparelho físico.
+- Todas as 23 fotografias renderizadas foram inspecionadas visualmente em 375 e 1440 px. Nenhum corte ou deformação introduzido.
+- Nenhuma imagem da Galeria carregada na abertura do topo da página. Após percorrer as 23: aproximadamente 673 KB transferidos em 375 px e 814 KB em 1440 px (DPR 1, medição local, incluindo overhead das respostas). Estes valores não representam um benchmark de rede móvel.
+- Evidências: galeria-validacao.json, galeria-375.png e galeria-1440.png. Nas capturas da seção, apenas header fixo e link de salto foram ocultados para não sobrepor o conteúdo da captura; o site mantém ambos intactos.
+
+Arquivos de implementação: app/page.tsx, app/globals.css, data/content.ts, data/gallery.ts e 23 WebP em public/images/galeria/. Outras seções não foram alteradas.

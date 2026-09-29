@@ -490,3 +490,42 @@ section:focus{outline:none}
   .gallery-curated .scroll-rail{padding-right:1rem;align-items:flex-start}
   .gallery-curated figure{width:min(calc(440px * var(--photo-ratio)),84vw)}
 }
+
+/* Etapa 8 — navegação, imprensa e canais oficiais. */
+.site-header .desktop-nav{display:none}
+.site-header .menu-trigger{margin-left:auto;flex-shrink:0;width:44px;height:44px}
+.menu-panel{overflow-y:auto;overscroll-behavior:contain}
+.menu-panel nav a{min-height:44px}
+.menu-email{display:inline-block;max-width:100%;overflow-wrap:anywhere;font-size:.875rem;letter-spacing:0}
+@media(min-width:1600px){
+  .site-header{gap:2rem}
+  .site-header .desktop-nav{display:flex;gap:1.3rem}
+  .desktop-nav a{display:flex;align-items:center;min-height:44px;font-size:.875rem;letter-spacing:.08em;opacity:1}
+  .site-header .menu-trigger{margin-left:0}
+}
+.press-chapter>*,.booking-contact{min-width:0}
+.press-categories{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.press-categories a{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:100px;padding:1.25rem;border:1px solid var(--gold-aged);font-family:var(--font-condensed),sans-serif;font-size:1rem;letter-spacing:.12em;text-transform:uppercase}
+.press-categories a:hover{background:var(--ink);color:var(--paper)}
+.clipping-content,.release-content{grid-column:1/-1}
+.clipping-content h3,.release-content h3{font-size:clamp(2rem,4vw,4rem);line-height:1.12;margin:0 0 1.5rem}
+.clipping-content header>p{max-width:760px;font-size:1.125rem}
+.clipping-publications{display:flex;flex-direction:column;gap:clamp(3rem,6vw,6rem);margin-top:3rem}
+.clipping-publications figure{width:92%;margin:0}
+.clipping-publications figure:nth-child(even){align-self:flex-end}
+.clipping-publications figure>a{display:block}
+.clipping-publications img{display:block;width:100%;height:auto}
+.clipping-publications figcaption{display:flex;justify-content:space-between;align-items:center;gap:1rem;padding:1rem 0;border-bottom:1px solid var(--line);font-size:1rem}
+.clipping-publications .text-link{flex-shrink:0;min-height:44px;font-size:.875rem;letter-spacing:.06em}
+.release-content{border-top:1px solid var(--line);padding-top:3rem}
+.booking-contact h3{font-size:1.5rem;line-height:1.3;margin:2rem 0 1rem}
+.booking-channel{display:block;width:fit-content;max-width:100%;min-height:44px;margin-top:1.25rem;padding-bottom:.5rem;border-bottom:1px solid var(--gold);overflow-wrap:anywhere;font-size:clamp(1rem,1.3vw,1.25rem)}
+.booking-channel>span{display:block;color:var(--sand);font-size:.875rem}
+@media(max-width:760px){
+  .menu-panel{padding:5rem 1.5rem 2rem}
+  .menu-panel nav{margin:1.5rem 0}
+  .press-categories{gap:.75rem}
+  .press-categories a{min-height:80px;padding:1rem}
+  .clipping-publications figure{width:100%}
+  .clipping-publications figcaption{align-items:flex-start;flex-direction:column;gap:.5rem}
+}
